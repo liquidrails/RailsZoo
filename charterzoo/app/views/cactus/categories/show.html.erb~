@@ -1,0 +1,12 @@
+<p>
+  <b>ID:</b>
+  <%=h @category.id.to_s %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @category.name %>
+</p>
+
+<%= link_to 'Edit', edit_cactus_category_path(@category) %> |
+<%= link_to 'Back', cactus_categories_path %>

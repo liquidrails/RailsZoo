@@ -1,0 +1,26 @@
+
+<h2>Editing flagname</h2>
+
+<%= error_messages_for :flagname %>
+
+<% form_for([:cactus, @flagname]) do |f| %>
+
+<p>
+  <b>ID:</b>
+  <%=h @flagname.id.to_s %>
+</p>
+
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', cactus_flagname_path(@flagname) %> |
+<%= link_to 'Back', url_for(:controller =>"cactus/admin", :action => "index") %>
+<br><br>
+<%= link_to 'Delete', [:cactus, @flagname], :confirm => 'Are you sure?', :method => :delete %>

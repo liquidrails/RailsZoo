@@ -1,0 +1,120 @@
+
+<table width=100% bgcolor=#fff cellpadding="5" cellspacing="10">
+
+
+
+<% form_for @posting, :url => preview_posting_path(@location,@category,@subcategory) do |f| %>
+
+  
+<tr >
+  <td colspan="2">
+	 <span class="linkdirections">Offer</span><br>
+   	 <%= f.text_field :headline, :size => 70,  :class=>"textFieldyellow" %>
+  </td>
+</tr>
+
+<tr >
+  <td colspan="2">
+	 <span class="linkdirections">Provider</span><br>
+   	 <%= f.text_field :organizer, :size => 30, :class=>"textFieldyellow"%>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+	 <span class="linkdirections">Details</span><br>
+   	 <%= f.text_area :details, :class=>"textFieldyellow", :size=>"90x6" %>
+  </td>
+</tr>
+
+
+<tr> 
+  <td width=280>
+     <span class="linkdirections" STYLE="background-color: #fff">Offer good FROM:</span> <br><%= f.calendar_date_select :departure, :embedded => true %>
+  </td>
+
+  <td>
+     <span class="linkdirections" STYLE="background-color: #fff">Offer EXPIRES:</span> <%= f.calendar_date_select :return, :embedded => true, :year_range => 0.years.ago..-1.years.ago %>
+  </td>
+</tr>
+
+
+
+<tr>
+  <td colspan="2">
+  <table  border="0" frame="void" cellpadding=5 bgcolor=#aaf >
+           <tr bgcolor=#339><td colspan="2">
+	   <font color=#fff size=4><b>You MUST link this post to a website.</b></font></td></tr>
+	   <tr><td colspan="2">
+           <p><SPAN STYLE="background-color: #ff3"><b>You may use your linkcode to link up to <i>any</i> 10 active posts at a time.</b></span></p>
+
+<table bgcolor=#ffffff><tr><td>
+
+ Here is my linkcode and linkcode email address, and the site that I wish my post to link to!  <br><%= link_to "<b>Don't have a linkcode?  <u>CLICK HERE</u></b>", linkcodes_path(@location)  %><br><br>
+
+<table>
+<tr><td>
+</b>Url:</b> 
+</td>
+
+<td>
+<% fields_for :weblink do |s| %>
+  <%=s.text_field :address, :size => 30, :class=>"textField"%>
+<% end %>
+</td></tr>
+
+
+<tr><td>
+</b>Linkcode:</b>
+</td><td><%= f.text_field :linkcode, :size => 16, :class=>"textField"%>
+</td></tr>
+
+<tr><td>Linkcode Email:</td>
+<td><%= f.text_field :linkemail, :size => 30, :class=>"textField"%>
+</td></tr>
+
+</table>
+
+
+</td></tr></table>
+</td></tr></table>
+
+</td></tr>
+
+
+<tr>
+  <td colspan="2"><br>
+	 <span class="subdirections">Your email address</span><span class="mlinkdirections"> &nbsp;<i>(You will receive your self-publishing kit here.)</i></span><br>
+   	 <%= f.text_field :email, :size => 40, :class=>"textFieldemail" %>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+	 <span class="subdirections">Confirm email address</span><br>
+   	 <%= f.text_field :email_confirmation, :size => 40, :class=>"textFieldemail" %><br>
+  </td>
+</tr>
+
+
+
+
+
+<tr><td colspan="2">
+
+
+    <%= f.hidden_field :subcategory_id, :value => @subcategory.id %>
+    <%= f.hidden_field :postlink, :value => 1 %>
+
+  <p>
+    <%= f.submit "preview" %>    	
+     <span class="options">&nbsp; By placing this ad I agree to the terms of use.</span>
+  </p>
+<% end %>
+
+</td></tr></table>
+
+
+
+
+ 

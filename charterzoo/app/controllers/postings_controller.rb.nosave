@@ -1,0 +1,148 @@
+class PostingsController < ApplicationController
+  # GET /postings
+  # GET /postings.xml
+  def index
+    if nil == params[:query]
+      @postings = Posting.find(:all)
+    else
+      @postings = Ultrasphinx::Search.new(:query => @query)
+      @postings.run
+      @postings.results
+    end
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @postings }
+    end
+  end
+
+  # GET /postings/1
+  # GET /postings/1.xml
+  def show
+    @posting = Posting.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @posting }
+    end
+  end
+
+  # GET /postings/new
+  # GET /postings/new.xml
+  def new
+    @posting = Posting.new
+    @location = Location.find(params[:location_id])
+    @category = Category.find(params[:category_id])
+    @subcategory = Subcategory.find(params[:subcategory_id], :include => [:subname])
+
+    respond_to do |format|
+      format.html # new.html.erb
+      format.xml  { render :xml => @posting }
+    end
+  end
+
+  # GET /postings/1/edit
+  def edit
+    @posting = Posting.find(params[:id])
+  end
+
+
+  # POST /postings
+  # POST /postings.xml
+  def preview
+    #require 'date'
+    #require 'time'
+    @posting = Posting.new
+    @aposting = Posting.new(params[:posting])
+    @aposting.departure = params[:departure]
+    @aposting.return = params[:return]
+    @subcategory=Subcategory.find(params[:posting][:subcategory_id], :include=>[:category, :location])
+    @location = @subcategory.location
+    @category = @subcategory.category
+    begin
+      Posting.transaction do
+        if @aposting.valid?
+          # throw exception
+           raise 'go to preview'
+        else
+
+	render :action => :destroy
+        #redirect_to "/#{@location.id}/#{@category.id}/#{@subcategory.id}/#{@posting.id}/edit"
+
+          
+        end
+     end
+     rescue 
+	  duration=@aposting.return - @aposting.departure + 1
+          #@posting.update_attributes(:duration => duration) 
+	  #@posting.update_attributes(:key => genRandomKey())
+          @aposting.duration = duration
+          flash[:notice] = 'Posting was successfully previewed.'
+          respond_to do |format|
+     	    format.html # preview.html.erb
+            format.xml  { render :xml => @posting, :status => :created }
+	  end
+
+     end
+   end 
+      
+
+  # POST /postings
+  # POST /postings.xml
+  def create
+    @posting = Posting.new(params[:posting])
+    @subcategory=Subcategory.find(params[:posting][:subcategory_id], :include=>[:category, :location])
+    @location = @subcategory.location
+    @category = @subcategory.category
+    if params[:commit] == "create"
+    respond_to do |format|
+      if @posting.save
+        flash[:notice] = 'Posting was successfully created.'
+        format.html { redirect_to(posting_path(@posting)) }
+        format.xml  { render :xml => @posting, :status => :created }
+      else
+        format.html { redirect_to(new_location_category_subcategory_post_path(@location, @category, @subcategory)) }
+        format.xml  { render :xml => @posting.errors, :status => :unprocessable_entity }
+      end
+    end
+    else render :action => :delete
+    end
+    
+  end
+
+
+  # PUT /postings/1
+  # PUT /postings/1.xml
+  def update
+    @posting = Posting.find(params[:id])
+
+    respond_to do |format|
+      if @posting.update_attributes(params[:posting])
+        flash[:notice] = 'Posting was successfully updated.'
+        format.html { redirect_to(@posting) }
+        format.xml  { head :ok }
+      else
+        format.html { render :action => "edit" }
+        format.xml  { render :xml => @posting.errors, :status => :unprocessable_entity }
+      end
+    end
+  end
+
+  # DELETE /postings/1
+  # DELETE /postings/1.xml
+  def destroy
+    @posting = Posting.find(params[:id])
+    @posting.destroy
+
+    respond_to do |format|
+      format.html { redirect_to(postings_url) }
+      format.xml  { head :ok }
+    end
+  end
+
+  def genRandomKey
+    def String.random_alphanumeric(size=16)
+    (1..size).collect { (i=Kernel.rand(62); i+=((i<10)?48:((i<36)?55:61))).chr}.join
+    end
+    return String.random_alphanumeric()
+    end
+end

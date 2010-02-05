@@ -1,0 +1,22 @@
+<h1>Listing subnames</h1>
+
+<table cellspacing=3>
+  <tr>
+    <td><h3>ID</h3></td>
+    <td><h3>Name</h3></td>
+  </tr>
+
+<% for subname in @subnames %>
+  <tr>
+    <td><%= subname.id %></td>
+    <td><%= subname.name %></td>
+    <td><%= link_to 'Show', [:cactus,subname] %></td>
+    <td><%= link_to 'Edit', edit_subname_path(cactus_subname) %></td>
+    <td><%= link_to 'Destroy', [:cactus,subname], :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New subname', new_cactus_subname_path %>

@@ -1,0 +1,2 @@
+module Cactus::FlagnamesHelper
+end

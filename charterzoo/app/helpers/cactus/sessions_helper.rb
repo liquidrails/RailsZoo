@@ -1,0 +1,2 @@
+module Cactus::SessionsHelper
+end

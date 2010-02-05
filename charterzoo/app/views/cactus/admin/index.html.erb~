@@ -1,0 +1,63 @@
+
+<table width = "<%= TABLE_WIDTH %>" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+  <tr><td width= "<%= SIDEBAR_WIDTH %>" valign="top"  class="sideMenu" align="left">
+
+<%= link_to image_tag("../images/cactus.gif", :alt=>'Admin', :border=>0), cactus_admin_path %><br><br>
+<%= link_to 'New subcategory', new_cactus_subcategory_path %><br><br>
+<%= link_to 'New category', new_cactus_category_path %> <br><br>
+<%= link_to 'New location', new_cactus_location_path %><br><br>
+<%= link_to 'Flagnames', url_for(:controller =>"cactus/flagnames", :action => "index") %><br><br>
+<%= link_to 'Butterwords', url_for(:controller =>"cactus/butterwords", :action => "index") %><br><br>
+<%= link_to 'Flagged Postings', url_for(:controller =>"cactus/flagged_postings", :action => "index") %><br><br>
+
+</td>
+
+<td width= <%= TABLE_WIDTH - SIDEBAR_WIDTH %> valign="top">
+
+
+<table border=1 cellpadding = 5>
+       
+<% for category in @categories %>
+<tr>
+ <th bgcolor="#ccccff"><%= link_to category.name, edit_cactus_category_path(category.id) %><%= @current_user.name%></th>
+ <% for location in @locations %>
+  <th colspan=1><%= link_to location.name, edit_cactus_location_path(location.id) %> </th>
+ <% end %>
+</tr>
+<% subcats = category.subcategories.select{|v| v.location_id == 0 }  %>
+<% subcat_array = subcats.sort {|a,b| a.subname.name <=> b.subname.name} %>
+<% for subcat in subcat_array %>
+<tr><th><%= link_to subcat.subname.name, cactus_subcat_edit_path(subcat.id)  %></th>
+   <% for location in @locations %>
+       <% apple=  category.subcategories.select{|y| y.location_id == location.id && y.subname_id == subcat.subname.id} %>
+       <% if apple !=[] %>
+       
+        <% @subcategory=Subcategory.find(:first, :conditions=>['location_id=? AND category_id=? AND subname_id=?', location.id, category.id, subcat.subname.id])%>
+        <% if true == @subcategory.status %>
+          <td bgcolor = #ccffcc>
+	  <%= link_to 'On', url_for(:controller =>"cactus/subcategories",  :id => @subcategory.id, :action => "remove") %>
+        <% else %>
+          <td bgcolor = #ffccff>
+          <%= link_to 'Off', url_for(:controller =>"cactus/subcategories",  :id => @subcategory.id, :action => "restore") %>
+        <% end %>
+       </td>
+    <% else %>
+       <td bgcolor = #ffffcc>
+        <% @subcategory = Subcategory.new %>
+	<% form_for [:cactus,@subcategory], :url => { :action => "add", :controller =>"cactus/subcategories" }  do |f| %>
+		<%= f.hidden_field :category_id, :value => category.id %>
+		<%= f.hidden_field :location_id, :value => location.id %>
+		<%= f.hidden_field :subname_id, :value => subcat.subname.id %>
+ 	<%= f.submit "Add", options={:style =>"border: medium double #Cf6; background-color : #93c; color : #fff; font: times; font-size: 14px; align: center"} %>
+        <% end %>
+       </td>
+  <% end %>
+
+<% end %>
+</tr>
+<% end %>
+<% end %>
+</table>
+
+</td></tr></table>
+

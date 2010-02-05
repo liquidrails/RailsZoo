@@ -1,0 +1,18 @@
+
+
+
+
+
+<table width = "<%= TABLE_WIDTH %>" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+
+<tr><td>
+
+<% if @category.id== 1 %>
+  <%= render :partial => 'listingsTrip' %>
+
+<% else %>
+  <%= render :partial => 'listingsCompany' %>
+<% end %>
+
+
+</td></tr></table>

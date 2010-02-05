@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Weblinks: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'cat' %>
+</head>
+<body>
+<table width ="<%= TABLE_WIDTH %>" align="center" height="80" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+  <tr>
+    <td width="<%= TD_LEFT %>" valign="middle" align="left"><%= link_to image_tag ("../images/charterzoo_logo_small.gif", :alt=>'Charterzoo', :border=>0), home_location_path(1) %><br />
+<span class="title"><%= link_to "Admin", cactus_admin_path %> | <%= link_to 'Weblinks', url_for(:controller =>"cactus/weblinks", :action => "index") %> | <%= controller.action_name %> 
+
+<% if @weblink %>
+| <%=@weblink.id%> | <%=link_to @weblink.address, "http://#{@weblink.address}" %></span> 
+<%end%>
+<br><br>
+  </td></tr>
+
+<tr><td>
+<p style="color: green"><%= flash[:notice] %></p>
+</td></tr>
+<tr><td>
+<%= yield  %>
+
+
+</td></tr></table>
+</body>
+</html>

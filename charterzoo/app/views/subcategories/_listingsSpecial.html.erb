@@ -1,0 +1,62 @@
+<table width = "<%= TABLE_WIDTH %>" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+
+
+<table width = 100%>
+
+<tr bgcolor=#fff>
+ <td width = 10% class="microtitle_white" align="center">&nbsp;</td>
+ <% if @field_sort == "departure" %>
+  <td width = 25% align="center" class="microtitle_white">Sort by</span></td>
+ <% else %>
+  <td width = 25% class="microtitle" align="center">Sort by</span></td>
+ <% end %>
+  <td width=25%>&nbsp;</td>
+  <% if @field_sort == "organizer_sort" %>
+  <td width = 25% align="center" class="microtitle_white">Sort by</span></td>
+ <% else %>
+  <td width = 25% class="microtitle" align="center">Sort by</td>
+ <% end %>
+<td width=25%>&nbsp;</td>
+<td width=25%>&nbsp;</td>
+  
+</tr>
+
+  <tr span class="listings_header"> 
+    <th>Id</th>
+
+    <th><font size=5><%= link_to "&uarr;", cat_postings_index_path(@location,@category, :query=>@query, :month=>@month, :year=>@year, :field_sort=>"departure", :list_mode=>"ascending") %></font> Valid from <font size=5><%=link_to "&darr;", cat_postings_index_path(@location,@category, :query=>@query, :month=>@month, :year=>@year, :field_sort=>"departure", :list_mode=>"descending") %></font></th>
+
+    <th>Details</th>
+
+     <th><font size=5><%= link_to "&uarr;", cat_postings_index_path(@location,@category, :query=>@query, :month=>@month, :year=>@year, :field_sort=>"organizer_sort", :list_mode=>"ascending") %></font> Sponsor <font size=5><%=link_to "&darr;", cat_postings_index_path(@location,@category, :query=>@query, :month=>@month, :year=>@year, :field_sort=>"organizer_sort", :list_mode=>"descending") %></font></th>
+     <th>Weblink</th>
+     <th>Status</th>
+  </tr>
+
+</span><span class="listings">
+<% cint = -1 %>
+<% for posting in @postings %>
+<% cint = cint*-1 %>
+	<% if cint == -1 %>
+  <tr>
+	<% else %>
+  <tr bgcolor = #<%=TRIP_COLOR %>>
+	<% end %>
+    <td><%= posting.id %></td>
+    <td><table><tr><td width=100%><%= h posting.departure.strftime("%b %d %Y")%> &nbsp;&nbsp;<%= h posting.departure.strftime("%a")%>
+       </td></tr></table></td>
+    <td><b><%= link_to posting.headline, posting %></b></td>
+    <td><%= h posting.organizer %></td>
+    <td><%= h posting.list_status %></td>
+  </tr>
+<% end %>
+</table>
+
+<br><br>
+
+<span class="paginate">
+  <%= will_paginate @postings, :params=>{:month=>@month, :year=>@year}%>
+
+<br />
+
+

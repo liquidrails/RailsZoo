@@ -1,0 +1,31 @@
+The following examples illustrate typical uses of the command zip for packaging a set of files into an "archive" file, also called "zip file". The command uses the standard zip file format. The archive files can therefore be used to tranfer files and directories between commonly used operating systems.
+
+    zip archivefile1 doc1 doc2 doc3 
+
+This command creates a file "archivefile1.zip" which contains a copy of the files doc1, doc2, and doc3, located in the current directory.
+
+    zip archivefile1 * 
+
+This command creates a file "archivefile1.zip" which contains a copy of all files in the current directory in compressed form. However, files whose name starts with a "." are not included. The extension ".zip" is added by the program.
+
+    zip archivefile1 .* * 
+
+This version includes the files that start with a dot. But subdirectories are still not included.
+
+    zip -r archivefile1 . 
+
+This copies the current directory, including all subdirectories into the archive file.
+
+    zip -r archivefile2 papers 
+
+This copies the directory "papers", located in the current directory, into "archivefile2.zip".
+
+    zip -r archivefile3 /home/joe/papers 
+
+This copies the directory "/home/joe/papers" into "archivefile3.zip". Since in this case the absolute path is given, it doesn't matter what the current directory is, except that the zip file will be created there.
+
+The command unzip extracts the files from the zip file.
+
+    unzip archivefile1.zip 
+
+This writes the files extracted from "archivefile1.zip" to the current directory. 

@@ -1,0 +1,71 @@
+<h1>Listing subcategories</h1>
+
+<table cellspacing=3>
+  <tr>
+    <td><h3>ID</h3></td>
+    <td><h3>Subname</h3></td>
+    <td><h3>Category</h3></td>
+    <td><h3>Location</h3></td>
+  </tr>
+
+<% for subcategory in @subcategories %>
+
+  <tr>
+    <td><%= subcategory.id.to_s %></td>
+    <td><%= subcategory.subname.id.to_s%> - <%=subcategory.subname.name %></td>
+    <td><%= subcategory.category.id.to_s%> - <%=subcategory.category.name %></td>
+    <td><%= subcategory.location_id.to_s%> <% if 0 != subcategory.location_id %> - <%= subcategory.location.name%><% end %></td>
+    <td><%= link_to 'Show', subcategory %></td>
+    <td><%= link_to 'Edit', edit_subcategory_path(subcategory) %></td>
+    <td><%= link_to 'Destroy', subcategory, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New subcategory', new_subcategory_path %><br>
+<%= link_to 'New category', new_category_path %><br>
+<%= link_to 'New location', new_location_path %><br>
+
+
+
+
+<table border=1 cellpadding = 5>
+<% for category in @categories %>
+<tr>
+ <th bgcolor="#ccccff"><%= category.name %></th>
+ <% for location in @locations %>
+  <th colspan=1><%= location.name %> </th>
+ <% end %>
+</tr>
+<% subcats = category.subcategories.select{|v| v.location_id == 0 }  %>
+<% subcat_array = subcats.sort {|a,b| a.subname.name <=> b.subname.name} %>
+<% for subcat in subcat_array %>
+<tr><th><%= link_to subcat.subname.name, edit_subcategory_path(subcat)  %></th>
+   <% for location in @locations %>
+       <% apple=  category.subcategories.select{|y| y.location_id == location.id && y.subname_id == subcat.subname.id} %>
+       <% if apple !=[] %>
+       <td bgcolor = #ccffcc>
+        <% @subcategory=Subcategory.find(:first, :conditions=>['location_id=? AND category_id=? AND subname_id=?', location.id, category.id, subcat.subname.id])%>
+<%= link_to 'On', @subcategory, :method => :delete %>
+       </td>
+    <% else %>
+       <td bgcolor = #ffccff>
+        <% @subcategory = Subcategory.new %>
+	<% form_for @subcategory, :url => { :action => "add" }  do |f| %>
+		<%= f.hidden_field :category_id, :value => category.id %>
+		<%= f.hidden_field :location_id, :value => location.id %>
+		<%= f.hidden_field :subname_id, :value => subcat.subname.id %>
+ 	<%= f.submit "Off" %>
+        <% end %>
+       </td>
+  <% end %>
+
+<% end %>
+</tr>
+<% end %>
+<% end %>
+</table>
+
+

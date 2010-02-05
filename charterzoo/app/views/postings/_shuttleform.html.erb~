@@ -1,0 +1,97 @@
+
+<table width=100% bgcolor=#fff cellpadding="5" cellspacing="10">
+
+
+
+<% form_for @posting, :url => preview_posting_path(@location,@category,@subcategory) do |f| %>
+
+
+
+
+
+<tr >
+  <td colspan="2">
+	 <span class="linkdirections">Shuttle Provider</span><br>
+   	 <%= f.text_field :organizer, :size => 30, :class=>"textField"%>
+  </td>
+</tr>
+
+<tr >
+  <td colspan="2">
+	 <span class="linkdirections">Destinations</span><br>
+   	 <%= f.text_field :headline, :size => 60,  :class=>"textField" %>
+  </td>
+</tr>
+
+<tr >
+  <td colspan="2">
+	 <span class="linkdirections">Company Phone</span><br>
+   	( <%= f.text_field :areacode, :size => 3, :class=>"textField"%> ) <%= f.text_field :phone3, :size => 3, :class=>"textField"%> - 
+<%= f.text_field :phone4, :size => 4, :class=>"textField"%>
+
+  </td>
+</tr>  
+
+<tr>
+ <td colspan="2">
+<h2>Shuttles run</h2><span class="options">
+  <%= f.radio_button :display_email, 1 %>Daily<br>
+  <%= f.radio_button :display_email, 2 %>Weekly<br>
+  <%= f.radio_button :display_email, 3 %>Monthly<br>
+  <%= f.radio_button :display_email, 3 %>Arranged<br></span>
+</td></tr>
+
+<tr border=1>
+  <td colspan="2"><br><hr><br><div style="background: #fff">
+	 <span class="linkdirections">Link this posting to your website</span><span class="mlinkdirections"> <i>(optional)</i></span><br><br>
+         <span class="subdirections">&nbsp;&nbsp;Linkcode:</span>
+   	 <%= f.text_field :organizer, :size => 12, :class=>"textFieldopt" %>&nbsp;
+         <span class="subdirections">&nbsp;&nbsp;Link email:</span>
+   	 <%= f.text_field :organizer, :size => 25, :class=>"textFieldopt" %>&nbsp;
+        <span class="minititle"><u>What's this?</u></span></div><br><hr>
+  </td>
+</tr>
+  
+<tr>
+  <td colspan="2">
+	 <span class="linkdirections">Details</span><br>
+   	 <%= f.text_area :details, :class=>"textField", :size=>"90x6" %>
+  </td>
+</tr>
+
+
+<tr>
+  <td colspan="2"><br>
+	 <span class="subdirections">Your email address</span><span class="mlinkdirections"> &nbsp;<i>(You will receive your self-publishing kit here.)</i></span><br>
+   	 <%= f.text_field :email, :size => 40, :class=>"textFieldemail" %>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+	 <span class="subdirections">Confirm email address</span><br>
+   	 <%= f.text_field :email, :size => 40, :class=>"textFieldemail" %><br>
+  </td>
+</tr>
+
+
+
+
+
+<tr><td colspan="2">
+
+
+    <%= f.hidden_field :subcategory_id, :value => @subcategory.id %>
+
+  <p>
+    <%= f.submit "preview" %>    	
+     <span class="options">&nbsp; By placing this ad I agree to the terms of use.</span>
+  </p>
+<% end %>
+
+</td></tr></table>
+
+
+
+
+ 

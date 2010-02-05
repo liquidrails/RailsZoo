@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Locations: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'cat' %>
+<%= javascript_include_tag :defaults %>
+<%= calendar_date_select_includes "blue" %>
+  <LINK REL="icon" HREF="../../../../images/favicon.ico" TYPE="image/ico">
+  <LINK REL="SHORTCUT ICON" HREF="../../../../images/favicon.ico">
+</head>
+
+<body>
+<table width ="<%= TABLE_WIDTH %>" align="center" height="80" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+  <tr colspan=2>
+    <td width="<%= TD_LEFT+240 %>" valign="middle" align="left">
+
+	<table cellspacing=4 cellpadding=0>
+	<tr>
+	<td valign="middle" align="left"><%= link_to image_tag ("../images/charterzoo_logo_2k.gif", :alt=>'Charterzoo', :border=>0), home_location_path(@location) %><br />
+	      <span class="titleBold"> <%= link_to @location.name, home_location_path(@location) %> </span> <span class="title">| <%= link_to @category.name, cat_postings_index_path(@location, @category) %>  | <%= link_to @subcategory.subname.name, subcat_postings_index_path(@location, @category, @subcategory) %> | <b>Manage Post</b>
+	    <br><br>
+	</td> 
+        </tr></table>  
+
+    </td>
+
+    <td width="<%= TD_RIGHT-240 %>" valign="middle" align="right">
+	  <table  border="0" frame="void" cellpadding=3><tr bgcolor=#f39><td>
+	   <font color=#ff3 size=2><b>Link Your Site!</b></font></td></tr>
+	   <tr><td>
+	   <%= link_to '[Go!]' %> &nbsp;
+	   <%= link_to "[What's this?]" %>
+	   </td></tr>
+	  </table>
+   </td>
+
+</tr></table>
+
+<table width ="<%= TABLE_WIDTH %>" align="center" height="80" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+
+<tr><td>
+
+<p style="color: green"><%= flash[:notice] %></p>
+
+
+<%= yield  %>
+
+
+</td></tr></table>
+</body>
+</html>
+
+
+</td></tr></table>
+</body>
+</html>

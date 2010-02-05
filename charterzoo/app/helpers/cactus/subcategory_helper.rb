@@ -1,0 +1,2 @@
+module Cactus::SubcategoryHelper
+end

@@ -1,0 +1,4 @@
+SELECT p1.*
+INTO charterzoo_development2.postings p2
+FROM `charterzoo_development.postings` p1 
+WHERE p1.return <= 

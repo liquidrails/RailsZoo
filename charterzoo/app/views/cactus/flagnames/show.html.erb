@@ -1,0 +1,13 @@
+<p>
+  <b>ID:</b>
+  <%=h @flagname.id.to_s %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @flagname.name %>
+</p>
+
+<%= link_to 'Edit', edit_cactus_flagname_path(@flagname) %> |
+<%= link_to 'Back', url_for(:controller =>"cactus/flagnames", :action => "index") %>
+

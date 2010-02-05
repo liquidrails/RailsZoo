@@ -1,0 +1,29 @@
+<h2>Listing Flagged Postings</h2>
+
+
+<table cellspacing=3 border=1>
+  <tr>
+    <td><h3>ID</h3></td>
+    <td><h3>Headline</h3></td>
+    <td><h3>Total Flag Count</h3></td>
+    <% for flagname in @flagnames %>
+      <td><h3><%= flagname.name %></h3></td>
+    <% end %>
+  </tr>
+
+<% for flagged_posting in @flagged_postings %>
+  <tr>
+    <td><%= flagged_posting.id %></td>
+    <td><%= link_to flagged_posting.headline, cactus_posting_path(flagged_posting) %>&nbsp;&nbsp;</td>
+    <td align='right'><%= flagged_posting.flags_count %></td>
+    <% for flagname in @flagnames %>
+    <td align='right'><%= Flag.count(:conditions => "posting_id = '#{flagged_posting.id}' AND flagname_id = '#{flagname.id}'") %></td>
+    <% end %>
+    <td><%= link_to 'Delete', cactus_posting_ddelete_path(flagged_posting), :confirm => 'Are you sure?' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+

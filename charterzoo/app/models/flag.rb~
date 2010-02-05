@@ -1,0 +1,5 @@
+class Flag < ActiveRecord::Base
+
+  belongs_to  :posting
+  belongs_to  :flagname
+end

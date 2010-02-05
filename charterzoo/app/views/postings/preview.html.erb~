@@ -1,0 +1,116 @@
+<table cellspacing="5" cellpadding="5" valign="top" width=100%> 
+<tr><td bgcolor=#f63>
+<span class="step">4. &nbsp; Preview.</span><br>
+</td></tr></table>
+
+<table width=100% cellpadding="5" cellspacing="10" class="listings">
+
+  <tr><td colspan="2"><span class="headline"><%=h @aposting.headline %></span></td></tr>
+
+  <tr><td>
+	  <p>
+	    <%=h @aposting.details %>
+	  </p>
+  </td></tr>
+
+  <tr><td>
+    <table width = 100% bgcolor=#eeeeff span class="listings">
+
+
+ <% if @category == 1 %>
+      <tr><td width=10% align="left">
+      <b>Departure:  </b>
+      </td>
+      <td align="left">
+      <%=h @aposting.departure.strftime("%a %b %d %Y")%> 
+      </td>
+     </tr>
+
+     <tr><td width=10% align="left">
+     <b>Return:  </b>
+     </td>
+     <td align="left">
+     <%=h @aposting.return.strftime("%a %b %d %Y")%> 
+     </td>
+     </tr>
+
+     <tr><td width=10% align="left">
+     <b>Duration:  </b>
+     </td>
+     <td align="left">
+        <% if @aposting.duration ==1 %>
+           <%=h @aposting.duration%> day
+        <% else %>
+           <%=h @aposting.duration%> days
+        <% end %>
+     </td>
+     </tr>
+<% end %>
+
+    <tr><td width=10% align="left">
+     <b>Organizer:  </b>
+    </td>
+    <td align="left">
+     <%=h @aposting.organizer%> 
+    </td>
+    </tr>
+ 
+
+    <tr><td width=10% align="left" >
+    <b>Contact:  </b> 
+    </td><td>
+    <%=h @aposting.display_email %>  
+    </td></tr>
+
+
+    <tr><td width=10% align="left" >
+    <b>Ipn Id:  </b> 
+    </td><td>
+    <%=h @aposting.ipn_id %>  
+    </td></tr>
+
+  </table><br><br>
+  </td></tr>
+
+
+</table> 
+
+  <table width=100% cellpadding="5" cellspacing="10">
+
+
+ <tr><td bgcolor=#ccccff>The posting.category.subcategory is <%= @aposting.subcategory.category.id %><br><br>
+<% form_for(@posting, :url => {:action => 'submit', :id => @posting.id }) do |f| %>
+    <%= f.hidden_field :subcategory_id, :value => @aposting.subcategory_id %>
+    <%= f.hidden_field :headline, :value => @aposting.headline %>
+    <%= f.hidden_field :details, :value => @aposting.details %>
+    <%= f.hidden_field :organizer, :value => @aposting.organizer %>
+    <%= f.hidden_field :contact, :value => @aposting.contact %>
+    <%= f.hidden_field :email, :value => @aposting.email %>
+    <%= f.hidden_field :display_email, :value => @aposting.display_email %>
+    <%= f.hidden_field :departure, :value => @aposting.departure %>
+    <%= f.hidden_field :return, :value => @aposting.return %>
+    <% if @category == 1 %>
+      <%= f.hidden_field :duration, :value => @aposting.duration %>
+    <% end %>
+    <%= f.hidden_field :url, :value => @aposting.weblink %>
+    <%= f.hidden_field :postlink, :value => @aposting.postlink %>
+    <%= f.hidden_field :linkcode, :value => @aposting.linkcode %>
+    <%= f.hidden_field :linkemail, :value => @aposting.linkemail %>
+    <%= f.hidden_field :ipn_id, :value => @aposting.ipn_id %>
+
+<span class="mlinkdirections">
+  To edit your add, click the "edit" button.  Otherwise, type the verification code in the box below and click "post" to continue.
+</span>
+
+  <p>
+    <%= f.submit "edit" %> <br>
+<%= show_simple_captcha(:distortion => 'medium') %>
+<p>
+  <%= f.submit "post" %> 
+</p>
+<% end %>
+
+   </td></tr></table>
+
+
+

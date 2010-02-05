@@ -1,0 +1,2 @@
+module LinkcodesHelper
+end

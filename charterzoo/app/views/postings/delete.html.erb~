@@ -1,0 +1,74 @@
+<p>
+  <b>Posting Id:</b>
+  <%=h @posting.id %>
+</p>
+
+<p>
+  <b>Headline:</b>
+  <%=h @posting.headline %>
+</p>
+
+<p>
+  <b>Details:</b>
+  <%=h @posting.details %>
+</p>
+
+<p>
+  <b>Organizer:</b>
+  <%=h @posting.organizer %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%=h @posting.contact %>
+</p>
+
+<p>
+  <b>Link:</b>
+  <%=h @posting.link %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%=h @posting.email %>
+</p>
+
+<p>
+  <b>Departure:</b>
+  <%=h @posting.departure %>
+</p>
+
+<p>
+  <b>Return:</b>
+  <%=h @posting.return %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%=h @posting.duration %>
+</p>
+
+<p>
+  <b>Subcategory:</b>
+  <%=h @posting.subcategory_id %>
+</p>
+
+<p>
+  <b>Phone:</b>
+  <%=h @posting.phone %>
+</p>
+
+
+<p>
+  <b>Key:</b>
+  <%=h @posting.key %>
+</p>
+
+<p>
+  <b>Validated:</b>
+  <%=h @posting.validated %>
+</p>
+
+
+<%= link_to 'Edit', edit_posting_path(@posting) %> |
+<%= link_to 'Back', postings_path %>

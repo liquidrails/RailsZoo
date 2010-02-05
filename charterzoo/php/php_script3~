@@ -1,0 +1,1 @@
+30 18 * * * /var/packages/php/php.exe /localhost/www/database/migrate_records.php

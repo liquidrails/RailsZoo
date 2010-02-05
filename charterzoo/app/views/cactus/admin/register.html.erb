@@ -1,0 +1,35 @@
+
+<table width = "<%= TABLE_WIDTH %>" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+  <tr><td colspan="2"> 
+
+<%= '<b>'+flash[:info]+'</b><hr />' if flash[:info] %>
+<h2>Become a Cactus Farmer!</h2>
+
+<%= error_messages_for 'user' %>
+</td></tr>
+
+<% form_tag(:action => 'register') do  %>
+<tr><td width=15>  Name:</td>
+<td>  <%= text_field 'user', 'name' %>
+  <br /><br /></td></tr>
+
+<tr><td width=15>  Login:</td>
+<td>  <%= text_field 'user', 'login' %>
+  <br /><br /></td></tr>
+
+
+<tr><td>  Password:</td>
+<td>  <%= password_field 'user', 'password' %>
+  <br /><br /></td></tr>
+
+<tr><td>  Password again:</td>
+<td>  <%= password_field 'user', 'password_confirmation' %>
+  <br /><br /></td></tr>
+
+
+<tr><td>&nbsp;</td>
+<td>  <%= submit_tag 'Register me' %>
+<% end %>
+
+</td></tr></table>
+

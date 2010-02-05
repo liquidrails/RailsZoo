@@ -1,0 +1,12 @@
+class Ipn < ActiveRecord::Base
+
+  validates_uniqueness_of :transaction_id,
+                          :on => :create
+ 
+  has_many :postings
+  serialize :params
+  # after_create :mark_as_purchased
+  # after_update :mark_as_purchased
+
+ 
+end

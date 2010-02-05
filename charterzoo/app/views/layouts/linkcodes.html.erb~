@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Locations: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'cat' %>
+  <LINK REL="icon" HREF="images/favicon.ico" TYPE="image/ico">
+  <LINK REL="SHORTCUT ICON" HREF="images/favicon.ico">
+</head>
+
+
+
+<body>
+<table width ="<%= TABLE_WIDTH %>" align="center" height="80" border="0" cellpadding="3" cellspacing="3" bgcolor="#fc6">
+
+
+
+
+<tr>
+<td width="20" valign="top" align="left" bgcolor=""><%= link_to image_tag ("../images/charterzoo_logo_2k.gif", :alt=>'Charterzoo', :border=>0), home_location_path(@location) %> 
+<br><span class="STOREtitle">Buy a Linkcode</span>
+</td>
+
+<td align="left">
+
+<table cellspacing=0 cellpadding=3 bgcolor=#ffffff width ="100%">
+<tr><td align="left">
+
+<img src="../../images/palm1010.gif" alt="Charterzoo Linkcode Store" />  
+</td>
+<td align="right" valign="top"> <span class="STOREfont">
+	   <%= link_to "<u>Check Active Linkcodes</u>", check_linkcodes_path(@location) %>
+</td></tr></table>
+
+</td>
+</tr>
+
+
+</table>
+
+<%= yield  %>
+
+</body>
+</html>

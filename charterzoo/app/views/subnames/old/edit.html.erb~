@@ -1,0 +1,18 @@
+<h1>Editing subname</h1>
+
+<%= error_messages_for :subname %>
+
+<% form_for(@subname) do |f| %>
+
+  <p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @subname %> |
+<%= link_to 'Back', subnames_path %>

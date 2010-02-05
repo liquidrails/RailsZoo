@@ -1,0 +1,110 @@
+
+<table width=100% bgcolor=#fff cellpadding="5" cellspacing="10">
+
+
+
+<% form_for @posting, :url => preview_posting_path(@location,@category,@subcategory) do |f| %>
+
+
+<tr >
+  <td>
+	 <span class="linkdirections">Shuttle Provider</span><br>
+   	 <%= f.text_field :organizer, :size => 30, :class=>"textField"%>
+  </td>
+</tr>
+
+  
+<tr >
+  <td>
+	 <span class="linkdirections">Destinations</span><br>
+   	 <%= f.text_field :headline, :size => 60,  :class=>"textField" %>
+  </td>
+</tr>
+
+
+<tr >
+  <td>
+	 <span class="linkdirections">Company Phone</span><br>
+   	( <%= f.text_field :areacode, :size => 3, :class=>"textField"%> )&nbsp; &nbsp;<%= f.text_field :phone3, :size => 3, :class=>"textField"%> - 
+<%= f.text_field :phone4, :size => 4, :class=>"textField"%>
+
+  </td>
+</tr>
+
+<tr>
+  <td><br>
+  <table  border="0" frame="void" cellpadding=5 bgcolor=#ff6 width=100%>
+           <tr bgcolor=#339><td>
+	   <span class="stepNB"><font color=#eee><b>You must have a linkcode to list in this category.</b></font></td></tr>
+	   <tr><td>
+
+           <p><b> Increase your web traffic and visibility!&nbsp;</b>  You may use your linkcode to link up to <i>ANY</i> 10 active posts at a time!
+
+ <%= link_to "<b>Don't have a linkcode?  <u>CLICK HERE</u></b>", linkcodes_path(@location.id)  %>
+
+</p>
+
+   <table bgcolor=#ffffff width=100%><tr><td><br>
+
+
+   <table width=100%>
+     <tr><td width=18%>
+       <b>COMPANY WEBSITE:</b> 
+     </td>
+
+     <td>
+       <%= f.text_field :url, :size => 30, :class=>"textField" %><br><br>
+     </td></tr>
+
+     <tr><td>
+         <b>LINKCODE:</b>
+       </td>
+      <td><%= f.text_field :linkcode, :size => 16, :class=>"textField" %><br><br>
+      </td>
+     </tr>
+
+     <tr><td><b>LINKCODE EMAIL:</b></td>
+      <td><%= f.text_field :linkemail, :size => 30, :class=>"textField" %>
+     </td></tr>
+
+    </table>
+
+     <br>
+
+    </td></tr></table>
+    </td></tr></table>
+
+    </td></tr>
+
+
+<tr>
+  <td><br>
+	 <span class="subdirections">Your email address</span><span class="mlinkdirections"> &nbsp;<i>(You will receive your self-publishing kit here.)</i></span><br>
+   	 <%= f.text_field :email, :size => 40, :class=>"textFieldemail" %>
+  </td>
+</tr>
+
+<tr>
+  <td>
+	 <span class="subdirections">Confirm email address</span><br>
+   	 <%= f.text_field :email_confirmation, :size => 40, :class=>"textFieldemail" %><br>
+  </td>
+</tr>
+
+
+
+
+
+<tr><td>
+
+
+    <%= f.hidden_field :subcategory_id, :value => @subcategory.id %>
+
+  <p>
+    <%= f.submit "preview" %>    	
+     <span class="options">&nbsp; By placing this ad I agree to the terms of use.</span>
+  </p>
+<% end %>
+
+</td></tr></table>
+

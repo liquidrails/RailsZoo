@@ -1,0 +1,133 @@
+
+<table width=100% bgcolor=#fff cellpadding="5" cellspacing="10">
+
+
+
+<% form_for @posting, :url => preview_posting_path(@location,@category,@subcategory) do |f| %>
+
+  
+<tr >
+  <td colspan="2">
+	 <span class="linkdirections">Destination</span><br>
+   	 <%= f.text_field :headline, :size => 60,  :class=>"textField" %>
+  </td>
+</tr>
+
+<tr >
+  <td colspan="2">
+	 <span class="linkdirections">Organized by</span><br>
+   	 <%= f.text_field :organizer, :size => 30, :class=>"textField"%>
+  </td>
+</tr>
+
+
+<tr> 
+  <td width=280>
+     <span class="linkdirections">Departs on:</span> <br><%= f.calendar_date_select :departure, :embedded => true %>
+  </td>
+
+  <td>
+     <span class="linkdirections">Returns on:</span> <%= f.calendar_date_select :return, :embedded => true, :year_range => 0.years.ago..-1.years.ago %>
+  </td>
+</tr>
+
+
+
+<tr>
+  <td colspan="2">
+  <table  border="0" frame="void" cellpadding=5 bgcolor=#ff6>
+           <tr bgcolor=#339><td colspan="2">
+	   <font color=#fff size=5><b>Link this post to your website!</b></font></td></tr>
+	   <tr><td colspan="2">
+           <p><b> INCREASE YOUR WEB TRAFFIC AND VISIBILITY!!  Link this posting to your website!   You may use your linkcode to link up to <i>any</i> 10 active posts at a time. </p>
+
+<table bgcolor=#ffffff><tr><td>
+
+  <%= f.radio_button :postlink, 1 %> Yes, here is my linkcode and linkcode email address, and the site that I wish my post to link to!  <%= link_to "<b>Don't have a linkcode?  <u>CLICK HERE</u></b>", :controller=>"linkcodes", :action=>"index", :lc=>@location  %><br><br>
+
+<table>
+<tr><td>
+</b>Url:</b> 
+</td>
+
+<td>
+<%= f.text_field :url, :size => 30, :class=>"textField"%>
+</td></tr>
+
+
+<tr><td>
+</b>Linkcode:</b>
+</td><td><%= f.text_field :linkcode, :size => 16, :class=>"textField"%>
+</td></tr>
+
+<tr><td>Linkcode Email:</td>
+<td><%= f.text_field :linkemail, :size => 30, :class=>"textField"%>
+</td></tr>
+
+</table>
+
+<br>
+  <%= f.radio_button :postlink, 0 %> No, thank you.  I do not wish to link my post to a website.
+
+
+
+</td></tr></table>
+</td></tr></table>
+
+</td></tr>
+  
+<tr>
+  <td colspan="2">
+	 <span class="linkdirections">Trip Details</span><br>
+   	 <%= f.text_area :details, :class=>"textField", :size=>"90x6" %>
+  </td>
+</tr>
+
+
+
+
+
+
+<tr>
+ <td colspan="2">
+<h2>Email Inquiries</h2><span class="options">
+  <%= f.radio_button :display_email, 1 %>Hide my email address (make it anonymous) and forward email inquiries to me.<br>
+  <%= f.radio_button :display_email, 2 %>Show my email address.<br>
+  <%= f.radio_button :display_email, 3 %>I don't want to receive any email inquiries. (Include contact info in your listing when using this option.)<br></span>
+</td></tr>
+
+<tr>
+  <td colspan="2"><br>
+	 <span class="subdirections">Your email address</span><span class="mlinkdirections"> &nbsp;<i>(You will receive your self-publishing kit here.)</i></span><br>
+   	 <%= f.text_field :email, :size => 40, :class=>"textFieldemail" %>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+	 <span class="subdirections">Confirm email address</span><br>
+   	 <%= f.text_field :email_confirmation, :size => 40, :class=>"textFieldemail" %><br>
+  </td>
+</tr>
+
+
+
+
+
+<tr><td colspan="2">
+
+
+    <%= f.hidden_field :subcategory_id, :value => @subcategory.id %>
+
+  <p>
+    <%= f.submit "preview" %>    	
+     <span class="options">&nbsp; By placing this ad I agree to the terms of use.</span>
+  </p>
+<% end %>
+
+</td></tr></table>
+
+
+
+
+ 

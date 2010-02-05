@@ -1,0 +1,33 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  headline: MyString
+  details: MyText
+  organizer: MyString
+  contact: MyString
+  link: MyString
+  email: MyString
+  departure: 2008-05-31
+  return: 2008-05-31
+  duration: 1
+  subcategory_id: 1
+  phone: MyString
+  catch_all: 1
+  key: MyString
+  validated: false
+
+two:
+  headline: MyString
+  details: MyText
+  organizer: MyString
+  contact: MyString
+  link: MyString
+  email: MyString
+  departure: 2008-05-31
+  return: 2008-05-31
+  duration: 1
+  subcategory_id: 1
+  phone: MyString
+  catch_all: 1
+  key: MyString
+  validated: false

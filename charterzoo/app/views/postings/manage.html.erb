@@ -1,0 +1,97 @@
+
+
+<table width=100% cellpadding="5" cellspacing="10" class="listings">
+
+ <tr><td bgcolor=#ccccff>
+   <% form_for(@posting, :url => {:action => 'change_status', :id => @posting.id, :key => @posting.key }) do |f| %>
+	<span class="mlinkdirections">
+	  To publish your ad, click here. 
+	
+
+  	<p><%= f.submit "Publish" %> </p> 
+
+	</span>
+  </td></tr>
+ 
+
+  <tr><td colspan="2"><span class="headline"><%=h @posting.headline %></span></td></tr>
+
+  <tr><td>
+	  <p>
+	    <%=h @posting.details %>
+	  </p>
+  </td></tr>
+
+  <tr><td>
+    <table width = 100% bgcolor=#eeeeff span class="listings">
+      <tr><td width=10% align="left">
+      <b>Departure:  </b>
+      </td>
+      <td align="left">
+      <%=h @posting.departure.strftime("%a %b %d %Y")%> 
+      </td>
+     </tr>
+
+     <tr><td width=10% align="left">
+     <b>Return:  </b>
+     </td>
+     <td align="left">
+     <%=h @posting.return.strftime("%a %b %d %Y")%> 
+     </td>
+     </tr>
+
+     <tr><td width=10% align="left">
+     <b>Duration:  </b>
+     </td>
+     <td align="left">
+        <% if @posting.duration ==1 %>
+           <%=h @posting.duration%> day
+        <% else %>
+           <%=h @posting.duration%> days
+        <%end %>
+     </td>
+     </tr>
+
+    <tr><td width=10% align="left">
+     <b>Organizer:  </b>
+    </td>
+    <td align="left">
+     <%=h @posting.organizer%> 
+    </td>
+    </tr>
+ 
+
+    <tr><td width=10% align="left" >
+    <b>Contact:  </b> 
+    </td><td>
+    <%=h @posting.display_email %>  
+    </td></tr>
+
+  </table><br><br>
+  </td></tr>
+
+
+</table> 
+
+  <table width=100% cellpadding="5" cellspacing="10">
+
+
+ <tr bgcolor=#ccccff><td >
+<span class="mlinkdirections">
+ To edit or delete your ad, click below.
+</td></tr> 
+<tr><td>
+<table><tr><td>
+    <%= f.submit "Delete" %> &nbsp; &nbsp; &nbsp;<% end %>
+  </td>
+  <td>
+	<% form_for(@posting, :url => {:action => 'edit', :id => @posting.id, :key => 22}) do |f| %>
+	    <%= f.submit "Edit" %> 
+	<% end %>
+</td></tr> 
+<br>  
+
+   </td></tr></table>
+
+
+

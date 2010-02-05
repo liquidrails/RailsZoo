@@ -1,0 +1,2 @@
+module Cactus::FlaggedPostingsHelper
+end

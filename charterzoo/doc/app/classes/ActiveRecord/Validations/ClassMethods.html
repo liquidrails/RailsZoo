@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: ActiveRecord::Validations::ClassMethods</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href="../../.././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">ActiveRecord::Validations::ClassMethods</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../../../files/lib/date_validator_rb.html">
+                lib/date_validator.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+    <div id="description">
+      <p>
+Add date_validator to Rails validations.
+</p>
+
+    </div>
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000045">validates_dates</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000045" class="method-detail">
+        <a name="M000045"></a>
+
+        <div class="method-heading">
+          <a href="#M000045" class="method-signature">
+          <span class="method-name">validates_dates</span><span class="method-args">(*attr_names)</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p>
+Validates date values, these can be dates or any formats accepted by <a
+href="../../Date.html#M000035">Date.parse_date</a>.
+</p>
+<p>
+For example:
+</p>
+<pre>
+  class Person &lt; ActiveRecord::Base
+    require_dependency 'date_validator'
+    validates_dates :birthday,
+                    :from =&gt; '1 Jan 1920',
+                    :to =&gt; Date.today,
+                    :allow_nil =&gt; true
+  end
+</pre>
+<p>
+Options:
+</p>
+<ul>
+<li>from - Minimum allowed date. May be a date or a string recognized by <a
+href="../../Date.html#M000035">Date.parse_date</a>.
+
+</li>
+<li>to - Maximum allowed date. May be a date or a string recognized by <a
+href="../../Date.html#M000035">Date.parse_date</a>.
+
+</li>
+<li>allow_nil - Attribute may be nil; skip validation.
+
+</li>
+</ul>
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000045-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000045-source">
+<pre>
+     <span class="ruby-comment cmt"># File lib/date_validator.rb, line 116</span>
+116:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">validates_dates</span>(<span class="ruby-operator">*</span><span class="ruby-identifier">attr_names</span>)
+117:     <span class="ruby-identifier">configuration</span> =
+118:       { <span class="ruby-identifier">:message</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-value str">'is an invalid date '</span> \
+119:                     <span class="ruby-value str">'(here are some valid examples: 23, 23 feb, 23 feb 06, '</span> \
+120:                     <span class="ruby-value str">'6 feb 2006, 2006-02-23, +6days, +6d, +6, +2w, -6m, +1y)'</span>,
+121:         <span class="ruby-identifier">:on</span> =<span class="ruby-operator">&gt;</span> <span class="ruby-identifier">:save</span>,
+122:       }
+123:     <span class="ruby-identifier">configuration</span>.<span class="ruby-identifier">update</span>(<span class="ruby-identifier">attr_names</span>.<span class="ruby-identifier">pop</span>) <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">attr_names</span>.<span class="ruby-identifier">last</span>.<span class="ruby-identifier">is_a?</span>(<span class="ruby-constant">Hash</span>)
+124:     <span class="ruby-comment cmt"># Don't let validates_each handle allow_nils, it checks the cast value.</span>
+125:     <span class="ruby-identifier">allow_nil</span> = <span class="ruby-identifier">configuration</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">:allow_nil</span>)
+126:     <span class="ruby-identifier">from</span> = <span class="ruby-constant">Date</span>.<span class="ruby-identifier">parse_date</span>(<span class="ruby-identifier">configuration</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">:from</span>))
+127:     <span class="ruby-identifier">to</span> = <span class="ruby-constant">Date</span>.<span class="ruby-identifier">parse_date</span>(<span class="ruby-identifier">configuration</span>.<span class="ruby-identifier">delete</span>(<span class="ruby-identifier">:to</span>))
+128:     <span class="ruby-identifier">validates_each</span>(<span class="ruby-identifier">attr_names</span>, <span class="ruby-identifier">configuration</span>) <span class="ruby-keyword kw">do</span> <span class="ruby-operator">|</span><span class="ruby-identifier">record</span>, <span class="ruby-identifier">attr_name</span>, <span class="ruby-identifier">value</span><span class="ruby-operator">|</span>
+129:       <span class="ruby-identifier">before_cast</span> = <span class="ruby-identifier">record</span>.<span class="ruby-identifier">send</span>(<span class="ruby-node">&quot;#{attr_name}_before_type_cast&quot;</span>)
+130:       <span class="ruby-keyword kw">next</span> <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">allow_nil</span> <span class="ruby-keyword kw">and</span> (<span class="ruby-identifier">before_cast</span>.<span class="ruby-identifier">nil?</span> <span class="ruby-keyword kw">or</span> <span class="ruby-identifier">before_cast</span> <span class="ruby-operator">==</span> <span class="ruby-value str">''</span>)
+131:       <span class="ruby-keyword kw">begin</span>
+132:         <span class="ruby-identifier">date</span> = <span class="ruby-constant">Date</span>.<span class="ruby-identifier">parse_date</span>(<span class="ruby-identifier">before_cast</span>)
+133:       <span class="ruby-keyword kw">rescue</span>
+134:         <span class="ruby-identifier">record</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">attr_name</span>, <span class="ruby-identifier">configuration</span>[<span class="ruby-identifier">:message</span>])
+135:       <span class="ruby-keyword kw">else</span>
+136:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">from</span> <span class="ruby-keyword kw">and</span> <span class="ruby-identifier">date</span> <span class="ruby-operator">&lt;</span> <span class="ruby-identifier">from</span>
+137:           <span class="ruby-identifier">record</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">attr_name</span>,
+138:                             <span class="ruby-node">&quot;cannot be less than #{from.strftime('%e-%b-%Y')}&quot;</span>)
+139:         <span class="ruby-keyword kw">end</span>
+140:         <span class="ruby-keyword kw">if</span> <span class="ruby-identifier">to</span> <span class="ruby-keyword kw">and</span> <span class="ruby-identifier">date</span> <span class="ruby-operator">&gt;</span> <span class="ruby-identifier">to</span>
+141:           <span class="ruby-identifier">record</span>.<span class="ruby-identifier">errors</span>.<span class="ruby-identifier">add</span>(<span class="ruby-identifier">attr_name</span>,
+142:                             <span class="ruby-node">&quot;cannot be greater than #{to.strftime('%e-%b-%Y')}&quot;</span>)
+143:         <span class="ruby-keyword kw">end</span>
+144:       <span class="ruby-keyword kw">end</span>
+145:     <span class="ruby-keyword kw">end</span>
+146:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>

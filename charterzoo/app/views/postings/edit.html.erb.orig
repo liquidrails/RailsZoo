@@ -1,0 +1,87 @@
+<h1>Editing posting</h1>
+
+<%= error_messages_for :posting %>
+
+<% form_for(@posting) do |f| %>
+  <p>
+    <b>Headline</b><br />
+    <%= f.text_field :headline %>
+  </p>
+
+  <p>
+    <b>Details</b><br />
+    <%= f.text_area :details %>
+  </p>
+
+  <p>
+    <b>Organizer</b><br />
+    <%= f.text_field :organizer %>
+  </p>
+
+  <p>
+    <b>Contact</b><br />
+    <%= f.text_field :contact %>
+  </p>
+
+  <p>
+    <b>Link</b><br />
+    <%= f.text_field :link %>
+  </p>
+
+  <p>
+    <b>Email</b><br />
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+    <b>Departure</b><br />
+    <%= f.date_select :departure %>
+  </p>
+
+  <p>
+    <b>Return</b><br />
+    <%= f.date_select :return %>
+  </p>
+
+  <p> <b>Departure</b><br>
+    <%= calendar_date_select_tag "departure", nil, :embedded => true, :year_range => 0.years.ago..2.years.from_now  %>
+  </p>
+
+  <p> <b>Return</b><br>
+    <%= calendar_date_select_tag "return", nil, :embedded => true, :year_range => 0.years.ago..2.years.from_now  %>
+  </p>
+
+
+  <p>
+    <b>Duration</b><br />
+    <%= f.text_field :duration %>
+  </p>
+
+  <p>
+    <b>Subcategory</b><br />
+    <%= f.text_field :subcategory_id %>
+  </p>
+
+  <p>
+    <b>Phone</b><br />
+    <%= f.text_field :phone %>
+  </p>
+
+
+  <p>
+    <b>Key</b><br />
+    <%= f.text_field :key %>
+  </p>
+
+  <p>
+    <b>Validated</b><br />
+    <%= f.check_box :validated %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @posting %> |
+<%= link_to 'Back', postings_path %>

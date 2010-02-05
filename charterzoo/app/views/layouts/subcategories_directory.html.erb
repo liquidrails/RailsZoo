@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Categories: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag 'cat' %>
+  <LINK REL="icon" HREF="../images/favicon.ico" TYPE="image/ico">
+  <LINK REL="SHORTCUT ICON" HREF="../images/favicon.ico">
+</head>
+
+<% months = %w(January February March April May June July August September October November December) %>
+<% @listcategories = Category.find(:all, :include => [:subcategories]) %>
+<body>
+
+<table width ="<%= TABLE_WIDTH %>" align="center" height="80" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff">
+  <tr>
+    <td width="<%= TD_LEFT %>" valign="middle" align="left">
+
+
+       <table cellspacing=1 cellpadding=0>
+        <tr>
+          <td width="<%= TD_LEFT %>" valign="middle" align="left"><%=link_to image_tag ("../images/charterzoo_logo_2k.gif", :alt=>'Charterzoo', :border=>0), home_location_path(@location) %>
+<br><span class="titleBold"><%= link_to @location.name, home_location_path(@location) %></span> | <span class="title"><%=link_to @category.name, cat_postings_index_path(@location, @category) %></span>  | <span class="title"><%= @subcategory.subname.name %></span>
+          </td>
+
+          <td width = "<%= TD_RIGHT %>" align="right" valign="top" />
+
+             <table>               
+               <tr><td>
+                  <% form_tag :action => 'search', :controller=>'postings' do %>
+                   <input type="hidden" name="location" value="<%= @location.id %>">
+                   <span class="menu" ><%= link_to 'Post', new_location_post_path(@location.id) %>  |  Search </span>
+                   <input id="query" name="query" size="25" type="text" font-size="8pt" class="pulldown" value= "<%= @chunks %>" />
+                   <input type="hidden" name="location" value="<%= @location.id %>">
+	           <select id="category_id" name="category[id]" class="pulldown" >
+                     <% for category in @listcategories %>
+	               <% if @category.id != category.id %>
+		         <option value="c <%= category.id %>">All <%= category.name %></option>
+	               <% else %>
+		         <option value="c <%= category.id %>" selected>All <%= category.name %></option>
+		         <% subcats = category.subcategories.select{|v| v.location_id == @location.id }  %>
+		         <% subcat_array = subcats.sort {|a,b| a.subname.name <=> b.subname.name} %>
+		         <% for subcatty in subcat_array %>
+		            <% if @subcategory.id != subcatty.id %>
+                               <option value="s <%= category.id %> <%= subcatty.id %>">  --<%= subcatty.subname.name %></option>
+                            <% else %>
+                               <option value="s <%= category.id %> <%= subcatty.id %>" selected>  --<%= subcatty.subname.name %></option>
+                            <% end %>
+	                 <% end %>
+      	               <% end %>
+                    <% end %>
+                   </select>
+               </td></tr>
+
+               <tr align=right>
+                 <td>
+                   <select name="month" class="drop_down">
+                     <% display_month=(nil==params[:month])?-99:params[:month]%>
+                     <% x =0 %>
+                     <% months.each do |month| %>
+                        <% x=x+1 %>
+                        <OPTION class="drop_down" value= "<%=x%>"<%=(display_month.to_i==x)?"SELECTED":""%>><%=month%></OPTION>
+                     <% end %>
+                     <OPTION value="-99" <%=(display_month.to_i ==-99)?"SELECTED":""%>>All months</OPTION>
+                   </select>
+                   <select name="year" class="drop_down"> 
+                      <OPTION  <%=(@year.to_i == Date.today.year-1)?"SELECTED":""%>><%=Date.today.year-1 %> </OPTION> 
+                      <OPTION  <%=(@year.to_i == Date.today.year)?"SELECTED":""%>><%=Date.today.year %> </OPTION>
+	              <OPTION  <%=(@year.to_i == Date.today.year+1)?"SELECTED":""%>><%=Date.today.year+1 %> </OPTION>
+                   </select>
+                   <%= submit_tag ">", options={:style=>"border:medium double #cf6;background-color:#93c; color:#fff;font:times;
+           font-size:12px;font-weight:bold;align:center"} %>
+                   <% end %> 
+                </td>
+               </tr></table>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2"><br></td>
+        </tr>
+      </table></td></tr>
+
+
+
+
+  <tr>
+    <td colspan=2>
+      <p style="color: green"><%= flash[:notice] %></p>
+
+      <%= yield  %>
+
+    </td>
+  </tr>
+</table>
+</body>
+</html>

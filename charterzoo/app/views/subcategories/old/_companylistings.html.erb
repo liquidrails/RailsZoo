@@ -1,0 +1,49 @@
+<table width = "<%= TABLE_WIDTH %>" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+
+
+<table width = 100%>
+
+
+<tr><td colspan=5><table bgcolor=#cf6 cellpadding=0 width=100%>
+  
+  <tr span class="listings"> 
+    <th width=20% align=left><span class="directory_header">Company</th>
+    <th width=50% align=left><span class="directory_header">Description</th>
+    <th width=10% align=left><span class="directory_header">Weblink</th>    
+    <th width=10% align=left><span class="directory_header">Edit/Delete</th> 
+
+ 
+  </tr>
+
+</table></td></tr>
+<tr height=7px><td></td></tr>
+
+<% cint = -1 %>
+<% for posting in @postings %>
+<% cint = cint*-1 %>
+	<% if cint == -1 %>
+  <tr>
+	<% else %>
+  <tr bgcolor = #ffb >
+	<% end %>
+    <td width=20%><b><%= posting.organizer %></b></td>
+    <td width=50%><%=posting.details %></td>
+    <% if nil!=posting.weblink %>
+      <td width=10%><%= posting.weblink.address %></td>
+    <% else %>
+      <td width=10%>no url</td>
+    <% end %>
+    <td width=10%><%= link_to 'Edit', posting_edit_path(posting,posting.key) %>&nbsp;
+        <%= link_to 'Delete', posting_change_status_path(posting,posting.key), :confirm => 'Are you sure?' %></td>
+  </tr>
+<% end %>
+</table>
+
+<br><br>
+
+<span class="paginate">
+  <%= will_paginate @postings, :params=>{:month=>@month, :year=>@year}%>
+
+<br />
+
+

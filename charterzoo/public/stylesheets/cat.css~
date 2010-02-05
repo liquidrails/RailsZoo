@@ -1,0 +1,364 @@
+body { background-color: #fff; color: #333; }
+
+body, p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size:   13px;
+  line-height: 18px;
+}
+
+.sideMenu {
+  font-family: verdana, arial, helvetica, sans-serif;
+  background-color: #fff;
+  padding: 1px;
+  font-size: 11px;
+}
+
+.locations {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #006;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.menu {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #006;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.pulldown {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #000;
+  font-size: 15px;
+}
+
+.catBar {
+  bbackground-color: #d6ff00;
+  background-color: #cf6;
+  height: 27px;
+  vertical-align: middle;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.SubcatBar {
+  background-color: #ff6;
+  height: 27px;
+  vertical-align: middle;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.specialBar {
+  background-color: #fca;
+  height: 27px;
+  vertical-align: middle;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.blueBar {
+  background-color: #cff;
+  height: 27px;
+  vertical-align: middle;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.catListing {
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.textField {
+  background-color: #eee;
+  height: ;
+  vertical-align: middle;
+  font-family: times, serif;
+  font-size: 16px;
+  font-weight: ;
+}
+
+.textFieldyellow {
+  background-color: #fcf;
+  height: ;
+  vertical-align: middle;
+  font-family: times, serif;
+  font-size: 16px;
+  font-weight: ;
+}
+
+.textFieldopt {
+  background-color: #ffc;
+  height: ;
+  vertical-align: middle;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: ;
+}
+
+.textFieldemail {
+  background-color: #eee;
+  height: ;
+  vertical-align: middle;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: ;
+}
+
+.options {
+  font-family verdana, arial, helvetica, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.title {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #f60 ;
+  font-size: 17px;
+  font-weight: ;
+}
+
+.titleBold {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #006 ;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.STOREtitle {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #006 ;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: ;
+}
+
+.STOREfont {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #003 ;
+  font-size: 17px;
+  font-weight:;
+  background-color: ;
+  line-height: 22px;
+}
+
+.STOREyellow {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #003 ;
+  font-size: 22px;
+  font-weight:;
+  background-color: #fc6
+}
+
+.STOREpink {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #003 ;
+  font-size: 22px;
+  font-weight:;
+  background-color: #f9f;
+}
+
+.STOREgreen {
+  font-family: times;
+  color: #003;
+  font-size: 22px;
+  font-weight;
+  background-color: #cf6;
+}
+
+.paginate {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #f60;
+  font-size: 18px;
+  font-weight: ;
+}
+
+.listings {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: ;
+  font-size: 15px;
+  font-weight: ;
+}
+
+.listings_header {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: ;
+  font-size: 15px;
+  font-weight: ;
+  background-color: #fc6;
+}
+
+.directions {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color:  ;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #ff9;
+}
+
+.step {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #039 ;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: ;
+}
+
+.stepNB {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #039 ;
+  font-size: 16px;
+  font-weight: ;
+  background-color: ;
+}
+
+.step_ul {
+  font-family: serif;
+  color: #039;
+  font-size: 18px;
+  font-weight: ;
+  line-height: 24px;
+  background-color: #fff;
+}
+
+.blanks {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: ;
+  font-size: 16px;
+  font-weight:;
+  background-color: ;
+}
+
+.substep {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #99f ;
+  font-size: 16px;
+  font-weight: bold;
+  background-color:;
+}
+
+
+.subdirections {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color:  ;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+
+
+.linkdirections {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color:  ;
+  ffont-size: 18px;
+  font-size: 15px;
+  font-weight: bold;
+  background-color:;
+}
+
+.mlinkdirections {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color:  ;
+  font-size: 18px;
+  font-weight: ;
+  background-color:;
+  line-height: 24px;
+}
+
+.slogan {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color:  #fc3;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #ffffff;
+}
+
+
+.microtitle {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #eee;
+  ccolor: #f60 ;
+  font-size: 11px;
+  font-weight: bold;
+  background: #fff;
+  bbackground: #f6f;
+}
+
+.microtitle_white {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: #006;
+  font-size: 11px;
+  font-weight: bold;
+  background: ;
+}
+
+.minititle {
+  font-family: verdana, arial, helvetica, sans-serif;
+  color: ;
+  font-size: 11px;
+  font-weight: ;
+}
+
+.month {
+  font-family: geneva, arial, helvetica, sans-serif;
+  color:  #000066;
+  font-size: 17px;
+  font-weight: ;
+  background-color: #fff;
+}
+
+
+.directory_header {
+  font-family: geneva, arial, helvetica, sans-serif;
+  color:  #003;
+  font-size: 17px;
+  font-weight: ;
+  background-color:;
+}
+
+
+.headline {
+  font-family: geneva, arial, helvetica, sans-serif;
+  color:  #000066;
+  font-size: 18px;
+  font-weight: ;
+}
+
+.view_by {
+  font-family: geneva, arial, helvetica, sans-serif;
+  color:  #000066;
+  font-size: 15px;
+  font-weight: ;
+  background-color: #fff
+}
+
+.view_by_bold {
+  font-family: geneva, arial, helvetica, sans-serif;
+  color:  #000066;
+  font-size: 15px;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.drop_down  {
+  color: #000
+  background: #fff
+  font-family: geneva, arial, helvetica, sans-serif;
+  font-size: 15px;
+}
+
+
+a { color: #00f; }
+A.catbar:visited{text-decoration: none; color: #006 }
+a:link {text-decoration: none;}
+a:visited {text-decoration: none; color: #006}
+
+
+

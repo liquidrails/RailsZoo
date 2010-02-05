@@ -1,0 +1,34 @@
+<h1>Editing location</h1>
+
+<%= error_messages_for :location %>
+
+<% form_for(@location) do |f| %>
+
+<p>
+  <b>ID:</b>
+  <%=h @location.id.to_s %>
+</p>
+
+<p>
+    <b>Name</b><br />
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <b>State</b><br />
+    <%= f.text_field :state %>
+  </p>
+
+  <p>
+    <b>Country</b><br />
+    <%= f.text_field :country %>
+  </p>
+
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @location %> |
+<%= link_to 'Back', locations_path %>

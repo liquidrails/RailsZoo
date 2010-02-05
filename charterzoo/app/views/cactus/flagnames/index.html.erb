@@ -1,0 +1,26 @@
+<h2>Listing Flagnames</h2>
+
+
+<table cellspacing=3>
+  <tr>
+    <td><h3>ID</h3></td>
+    <td><h3>Name</h3></td>
+    <td><h3>Name</h3></td>
+    <td><h3>Flag Count</h3></td>
+  </tr>
+
+<% for flagname in @flagnames %>
+  <tr>
+    <td><%= flagname.id %></td>
+    <td><%= flagname.name %>&nbsp;&nbsp;</td>
+    <td><%= flagname.flags_count %></td>
+    <td><%= link_to 'Show', [:cactus, flagname] %></td>
+    <td><%= link_to 'Edit', edit_cactus_flagname_path(flagname) %></td>
+    <td><%= link_to 'Destroy', [:cactus, flagname], :confirm => 'Are you sure you want to delete this flagname?', :method => "delete" %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New flagname', new_cactus_flagname_path %>

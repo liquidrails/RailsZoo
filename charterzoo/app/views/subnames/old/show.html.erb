@@ -1,0 +1,12 @@
+<p>
+  <b>ID:</b>
+  <%=h @subname.id.to_s %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%=h @subname.name %>
+</p>
+
+<%= link_to 'Edit', edit_subname_path(@subname) %> |
+<%= link_to 'Back', subnames_path %>

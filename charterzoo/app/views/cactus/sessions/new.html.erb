@@ -1,0 +1,27 @@
+
+
+<% form_tag cactus_session_path do %>
+ <p><h1>Please log in.</h1><p>
+
+<table>
+  <tr><td>
+   <p>
+    <label>Login:</label>
+   </td>
+   <td>    
+     <%= text_field_tag 'login' %>
+     </p>
+   </td>
+  </tr>
+  <tr><td>
+  <p>
+    <label>Password:</label>
+  </td>  
+  <td>
+    <%= password_field_tag 'password' %>
+    </p>
+  </td></tr>
+  <tr><td>
+   <p>&nbsp;</td><td> <%= submit_tag 'login' %></p>
+  </td></tr></table>
+<% end %>

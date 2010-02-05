@@ -1,0 +1,29 @@
+<br>
+<h2>Edit subcategory</h2>
+<%= error_messages_for :subcategory %>
+
+<% form_for([:cactus, @subcategory], :url =>{:action => "update"}) do |f| %>
+
+  <p>
+    <b>Category</b><br />
+<p>
+<%= collection_select(:subcategory, :category_id, Category.find(:all), :id, :name) %>
+</p>
+
+<% fields_for :subname do |s| %>
+  <p>
+    <b>Name</b><br>
+    <%= s.text_field :name %>
+  </p>
+<% end %>
+
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', [:cactus, @subcategory] %> |
+<%= link_to 'Back', url_for(:controller =>"cactus/admin", :action => "index") %>
+<br><br>
+<%= link_to 'Delete', [:cactus, @subcategory], :confirm => 'Are you sure?', :method => :delete %>

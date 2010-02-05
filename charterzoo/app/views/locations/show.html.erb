@@ -1,0 +1,41 @@
+<h1><%= @location.name %></h1>
+
+<table cellspacing=3>
+  <tr>
+    <td><h3>ID</h3></td>
+    <td><h3>Name</h3></td>
+    <td><h3>State</h3></td>
+    <td><h3>Country</h3></td>
+  </tr>
+
+<% for location in @locations %>
+  <tr>
+    <td><%= location.id %></td>
+    <td><%= location.name %></td>
+    <td><%= sanitize location.state %></td>
+    <td><%= location.country %></td>
+    <td><%= link_to 'Show', home_location_path(location) %></td>
+    <td><%= link_to 'Edit', edit_location_path(location) %></td>
+    <td><%= link_to "Delete", {:action => 'delete', :id => location.id},
+:confirm => "Are you sure you want to delete this item?" %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New posting', new_location_post_path(@location) %>
+------------------------<br>
+
+<% for category in @categories %>
+   <h2><%= link_to category.name, cat_postings_index_path(@location, category) %></h2>
+    <% subcats = category.subcategories.select{|v| v.location_id == @location.id }  %>
+    <% subcat_array = subcats.sort {|a,b| a.subname.name <=> b.subname.name} %>
+      <% for subcat in subcat_array %>
+   	<h3><%= link_to subcat.subname.name, subcat_postings_index_path(@location,category,subcat) %> (<%= subcat.postings_count %>)</h3>
+      <% end %>
+<% end %>
+
+---------------------
+
+

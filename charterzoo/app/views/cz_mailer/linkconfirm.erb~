@@ -1,0 +1,15 @@
+CzMailer#linkconfirm
+
+Find me in app/views/cz_mailer/linkconfirm.erb
+
+Dear <%= @ipn.email %>,
+<br>
+
+Your linkcode is <% @ipn.code %>
+Your linkcode email is <% @ipn.email %>
+<b>
+This is what you will enter in your form when linking a website to your post.
+
+Cheers,
+
+Charterzoo Webmaster 

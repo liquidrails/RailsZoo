@@ -1,0 +1,94 @@
+<%= error_messages_for :posting %>
+<table width = 100% cellspacing=0 cellpadding=4>
+
+  <tr bgcolor= #ffffff><td colspan="2"><span class="headline"><%=h @posting.headline %></span><br></td></tr>
+
+
+</table>
+<br><br>
+<p>
+<table width = 100% bgcolor=#eeeeff span class="listings">
+<tr><td width=10% align="left">
+  <b>Departure:  </b>
+  </td>
+  <td align="left">
+     <%=h @posting.departure.strftime("%a %b %d %Y")%> 
+  </td>
+</tr>
+
+<tr><td width=10% align="left">
+  <b>Return:  </b>
+  </td>
+  <td align="left">
+     <%=h @posting.return.strftime("%a %b %d %Y")%> 
+  </td>
+</tr>
+
+<tr><td width=10% align="left">
+  <b>Duration:  </b>
+  </td>
+  <td align="left">
+     <%=h @posting.duration%> days 
+  </td>
+</tr>
+
+<tr><td width=10% align="left">
+  <b>Organizer:  </b>
+  </td>
+  <td align="left">
+     <%=h @posting.organizer%> 
+  </td>
+</tr>
+ 
+
+<tr><td width=10% align="left" >
+  <b>Contact:  </b> 
+  </td><td>
+  <%=h @posting.contact %>  
+ </td>
+</tr>
+
+<tr><td width=10% align="left" >
+  <b>List Status:  </b> 
+  </td><td>
+  <%=h @posting.list_status %>  
+ </td>
+</tr>
+
+<tr><td width=10% align="left" >
+  <b>Website:  </b> 
+  </td><td><u>
+  <a href=http://"<%=h @posting.weblink %>"></a></u> 
+ </td>
+</tr>
+
+</table>
+</p>
+<br>
+
+<table width = 100%>
+<tr><td>
+<p>
+  <%=h @posting.details %>blah blah blah
+</p><br>
+</td></tr></table>
+
+
+<table width=100% span class="listings">
+<tr><td>
+
+<p>
+  <i>Posted 
+  <%=h @posting.created_at %></i>
+</p>
+
+<p>
+  Posting Id:
+  <%=h @posting.id %>
+</p>
+</td></tr>
+
+<tr><td><%=link_to "edit", posting_edit_path(@posting,@posting.key) %>
+
+</table>
+

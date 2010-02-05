@@ -1,0 +1,19 @@
+
+<table cellspacing=3 cellpadding=2 border=1>
+  <tr>
+    <td><h3>ID</h3></td>
+    <td><h3>Organizer</h3></td>
+    <td><h3>Headline</h3></td>
+  </tr>
+
+<% for posting in @postings %>
+  <tr>
+    <td><%=posting.id %></td>
+    <td><%=posting.organizer%></td>
+    <td><%= link_to posting.headline, posting%></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+

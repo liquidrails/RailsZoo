@@ -1,0 +1,30 @@
+<h1>Listing weblinks</h1>
+
+<table cellspacing=3 cellpadding=3 border=1>
+  <tr>
+    <td><h3>ID</h3></td>
+    <td><h3>Weblink</h3></td>
+    <td><h3>Linked Postings</h3></td>
+    <td><h3>Approval</h3></td>
+  </tr>
+
+<% form_for [:cactus, :weblink], :url => {:action => "approve" }  do |g| %>
+<% for weblink in @weblinks %>
+    <% fields_for weblink, :index => weblink.id do |f| %>
+  <tr>
+    <td><%= weblink.id %></td>
+    <td><%=link_to weblink.address, "http://#{weblink.address}" %></a></td>
+    <td><%= link_to weblink.postings_count, cactus_weblink_posts_path(weblink) %></td>
+    <td><%= weblink.approval %></td>
+    <td><%= f.radio_button :approval[weblink.id], 1  %>Approve</td>
+    <td><%= f.radio_button :approval[weblink.id], 2 %>Reject</td>
+  </tr>
+<% end %>
+<% end %>
+</table><br><br>
+<%= g.submit "Submit" %> 
+<% end %>
+
+
+<br />
+

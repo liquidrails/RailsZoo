@@ -1,0 +1,61 @@
+
+<table width = "<%= TABLE_WIDTH %>" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+  <tr><td width= "<%= SIDEBAR_WIDTH %>" valign="top"  class="sideMenu" >
+	
+        <img src="images/palm1010.gif" alt="<%= @location.name %>" /><br>
+        <span class="locations">
+        <% for location in @locations %>
+          <% if @location != location %>
+            <%= link_to location.name, home_location_path(location) %><br>
+          <% end %>
+        <% end %>
+        </span>
+
+
+<br><%= link_to image_tag("../images/ccactus.gif", :alt=>'Admin', :border=>0), cactus_admin_path %>
+
+
+
+
+      <td width= <%= TABLE_WIDTH - SIDEBAR_WIDTH %> valign="top">
+<table valign="top"><tr valign="top"><td valign="top">
+
+        <% cnt=0 %>
+        <% for category in @categories %>
+         <% subcats = category.subcategories.select{|v| v.location_id == @location.id && (v.status == true || v.postings_count > 0)}  %>
+   <% if not subcats.empty? %>
+
+          <% cnt += 1 %>
+           <table width = "180" border="0" cellpadding="2" cellspacing="3" bgcolor="#ccffff" valign="top">
+
+            <% if cnt < 5 %>
+          	<tr valign="top"><td class="catBar" valign="top">
+            <% elsif cnt == 5 %>
+          	<tr valign="top"><td class="specialBar" valign="top">
+            <% else %>
+          	<tr valign="top"><td class="specialBar" valign="top">
+            <% end %>
+            
+                 <%= link_to category.name, cat_postings_index_path(@location, category), {:style => "color: #006"} %>
+            </td></tr>
+
+
+ 
+          <% subcat_array = subcats.sort {|a,b| a.subname.name <=> b.subname.name} %>
+          <% for subcat in subcat_array %>
+   	    <tr><td bgcolor=#fff class="catListing"><%= link_to subcat.subname.name, subcat_postings_index_path(@location,category,subcat) %> (<%= subcat.postings_count %>)</td></tr>
+          <% end %>
+        </table>
+<% if 0 == cnt%2 %>
+</td><td valign="top">
+<% end %> 
+<% end %>
+      <% end %>
+
+</td></tr></table>
+
+
+   </td>
+  </tr>
+</table>
+

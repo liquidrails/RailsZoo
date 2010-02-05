@@ -1,0 +1,43 @@
+<%= error_messages_for :posting %>
+
+<table cellspacing="5" cellpadding="5" valign="top" width=100%>
+<tr><td bgcolor=#ddf>
+
+
+<% if @category.id== 1 %>
+    <span class="step">3. &nbsp; Please update the form below.  </span> 
+    <ul> 
+      <span class="step_ul"><li> Post expires in one month, or the day after departure (whichever comes first.)</b>
+      <li><i>A website link to this post must be approved by Charterzoo before the url will be published.</i>
+      <li>Listings do not violate <a href="http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=66736" target="blank"><u>Google Paid Link Guidlines</u></a>.</span>
+    </ul>
+  <%= render :partial => 'formTrip' %>
+
+<% elsif @category.id== 5 %>
+     <span class="step">3. &nbsp; Please update the form below.  </span>
+    <ul> <span class="step_ul"> 
+      <li> You must have a linkcode to list in this category.
+      <li> Post expires when linkcode expires.
+      <li> Listing must be approved by Charterzoo before it will be published.
+      <li> All listings conform to <a href="http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=66736"><b><u>Google Paid Link Guidlines</u></b></a>.</span>
+    </ul>
+  <%= render :partial => 'formSpecial' %>
+
+<% else %>
+    <span class="step">3. &nbsp; Please update the form below.  </span>
+    <ul> <span class="step_ul"> 
+      <li> You must have a linkcode to list in this category.
+      <li> Post expires when linkcode expires.
+      <li> Listing must be approved by Charterzoo before it will be published.
+      <li> All listings conform to <a href="http://www.google.com/support/webmasters/bin/answer.py?hl=en&answer=66736"><b><u>Google Paid Link Guidlines</u></b></a>.</span>
+    </ul>
+
+    <%= render :partial => 'formCompany' %>
+
+<% end %>
+
+</td></tr></table>
+
+
+
+ 

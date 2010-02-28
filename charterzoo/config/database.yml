@@ -36,7 +36,6 @@ test:
 production:
   adapter: mysql
   encoding: utf8
-  database: charterzoo_production
+  database: charterzoo_development
   username: root
-  password: 
-  socket: /var/run/mysql/mysql.sock
+  password: cheri

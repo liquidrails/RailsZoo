@@ -20,7 +20,7 @@ development:
   database: charterzoo_development
   username: root
   password: cheri
-  socket: /var/lib/mysql/mysql.sock
+  #socket: /var/run/mysql/mysql.sock
 
 # Warning: The database defined as 'test' will be erased and
 # re-generated from your development database when you run 'rake'.
@@ -31,7 +31,7 @@ test:
   database: charterzoo_test
   username: root
   password:
-  socket: /var/lib/mysql/mysql.sock
+  socket: /var/run/mysql/mysql.sock
 
 production:
   adapter: mysql
@@ -39,4 +39,4 @@ production:
   database: charterzoo_production
   username: root
   password: 
-  socket: /var/lib/mysql/mysql.sock
+  socket: /var/run/mysql/mysql.sock

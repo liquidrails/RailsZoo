@@ -1,2 +1,0 @@
-class Cactus::CategoryController < ApplicationController
-end

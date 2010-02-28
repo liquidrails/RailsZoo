@@ -1,9 +1,0 @@
-INSERT INTO postings2
-SELECT *
-FROM postings p1 
-WHERE p1.return <= NOW()
-
-
-DELETE FROM postings2 WHERE `return` <= NOW()
-
-

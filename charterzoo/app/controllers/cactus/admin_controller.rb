@@ -1,8 +1,8 @@
 class Cactus::AdminController < ApplicationController
 
- #before_filter  :fetch_logged_in_user
- #before_filter  :login_required, :except => :register
- #before_filter  :master_login_required, :only => "register"  #Not Working!!!! Figure it out!!!!!!!
+ before_filter  :fetch_logged_in_user
+ before_filter  :login_required, :except => :register
+ before_filter  :master_login_required, :only => "register" 
 
  def index
     @subcategories = Subcategory.find(:all, :include => [:subname])

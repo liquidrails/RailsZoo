@@ -32,12 +32,12 @@ protected
 	    redirect_to new_cactus_session_path and return false
 	end
    
-        def master_login_required
-            return true if logged_in? and @current_user.login =="daffy"
+  def master_login_required
+    return true if logged_in? and @current_user.login =="daffy"
 	    #session[:return_to] = request.request_uri
-	  else
-	    redirect_to new_cactus_session_path and return false
-        end
+	     else
+	       redirect_to new_cactus_session_path and return false
+  end
 
 
 	def fetch_logged_in_user

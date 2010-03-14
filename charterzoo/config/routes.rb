@@ -11,9 +11,9 @@ ActionController::Routing::Routes.draw do |map|
   map.cactus_subcat_add '/cactus/subcategories/add', :controller => 'cactus/subcategories', :action => 'add'
   map.cactus_subcat_remove '/cactus/subcategories/:id/remove', :controller => 'cactus/subcategories', :action => 'remove'
   map.cactus_subcat_restore '/cactus/subcategories/:id/restore', :controller => 'cactus/subcategories', :action => 'restore'
-  map.cactus_admin '/cactus/admin/register', :controller => 'cactus/admin', :action => 'register'
+  map.cactus_register '/cactus/admin/register', :controller => 'cactus/admin', :action => 'register'
   map.cactus_admin '/cactus/admin', :controller => 'cactus/admin', :action => 'index'
-
+  map.cactus_rollcall '/cactus/admin/rollcall', :controller => 'cactus/admin', :action => 'rollcall'
 
  # map.cactus_subcat_index '/cactus/subcategories/index', :controller => 'cactus/subcategories', :action => 'index'
 

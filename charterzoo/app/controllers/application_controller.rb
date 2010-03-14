@@ -14,10 +14,10 @@ class ApplicationController < ActionController::Base
 
 protected
 
-    def fetch_logged_in_user
-	return unless session[:user_id]
-	@current_user = Administrator.find_by_id(session[:user_id])
-    end
+  def fetch_logged_in_user
+	  return unless session[:user_id]
+	  @current_user = Administrator.find_by_id(session[:user_id])
+  end
 
 	def logged_in?  #returns true if user is logged in
 	  ! @current_user.nil?

@@ -1,0 +1,2332 @@
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-04 00:20:39) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-04 00:30:46) [GET]
+  Parameters: {"id"=>"phpmyadmin"}
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=phpmyadmin):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-04 00:31:06) [GET]
+  Parameters: {"id"=>"phpmyadmin"}
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=phpmyadmin):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:36:41) [GET]
+  Parameters: {"id"=>"phpmyadmin"}
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=phpmyadmin):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:36:53) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:37:47) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:38:32) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:38:34) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:38:53) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:38:54) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:38:57) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:39:02) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:39:49) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:39:51) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:39:52) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 08:39:55) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 12:57:30) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 12:57:35) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 12:57:51) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-06 13:22:56) [GET]
+  Parameters: {"id"=>"phpMyAdmin"}
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=phpMyAdmin):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing LocationsController#index (for 127.0.1.1 at 2010-03-07 12:54:53) [GET]
+  Parameters: {"id"=>"phpmyadmin"}
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=phpmyadmin):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering /export0/home/cheri/Projects/RailsZoo/charterzoo/public/404.html (404 Not Found)
+
+
+Processing LocationsController#index (for 127.0.1.1 at 2010-03-07 12:55:19) [GET]
+  Parameters: {"id"=>"phpmyadmin"}
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=phpmyadmin):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering /export0/home/cheri/Projects/RailsZoo/charterzoo/public/404.html (404 Not Found)
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-07 19:51:25) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-07 19:51:59) [GET]
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=2):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-07 20:44:54) [GET]
+Rendering template within layouts/locations
+Rendering locations/index
+Completed in 141ms (View: 134, DB: 3) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-07 20:44:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/ccactus.gif" with {:method=>:get}):
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-07 20:45:17) [GET]
+  Parameters: {"id"=>"1-San-Diego"}
+Rendering template within layouts/locations
+Rendering locations/index
+Completed in 20ms (View: 8, DB: 8) | 200 OK [http://localhost/1-San-Diego]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-07 20:45:17) [GET]
+
+ActionController::RoutingError (No route matches "/images/ccactus.gif" with {:method=>:get}):
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-07 20:59:54) [GET]
+  Parameters: {"id"=>"1-San-Diego"}
+Rendering template within layouts/locations
+Rendering locations/index
+Completed in 9ms (View: 3, DB: 2) | 200 OK [http://localhost/1-San-Diego]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-07 20:59:54) [GET]
+
+ActionController::RoutingError (No route matches "/images/ccactus.gif" with {:method=>:get}):
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-07 20:59:56) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/cactus/admin]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-07 20:59:56) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 19ms (View: 12, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::SessionsController#create (for 127.0.0.1 at 2010-03-07 21:00:04) [POST]
+  Parameters: {"commit"=>"login", "authenticity_token"=>"ySLCpkVi9F1xg/RXkr3flIlT9F1R8peR1Yh2D9O/vm0=", "login"=>"daffy", "password"=>"duck"}
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://localhost/cactus/session]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-07 21:11:42) [GET]
+Rendering template within layouts/locations
+Rendering locations/index
+Completed in 4ms (View: 2, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-07 21:11:43) [GET]
+
+ActionController::RoutingError (No route matches "/images/ccactus.gif" with {:method=>:get}):
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-07 21:11:53) [GET]
+Rendering template within layouts/locations
+Rendering locations/index
+Completed in 13ms (View: 8, DB: 1) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-07 21:11:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/ccactus.gif" with {:method=>:get}):
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-07 21:11:55) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/cactus/admin]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-07 21:11:55) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-08 20:44:03) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/cactus/admin]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:44:03) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-08 20:44:15) [GET]
+
+ActionController::RoutingError (No route matches "/cactus/admin/register.html.erb" with {:method=>:get}):
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 20:44:23) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:master_login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/cactus/admin/register]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:44:23) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 6ms (View: 5, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-08 20:44:35) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/cactus/admin]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:44:35) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 7ms (View: 6, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-08 20:44:44) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/cactus/admin]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:44:44) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 20:44:52) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:master_login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/cactus/admin/register]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:44:52) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 20:46:24) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:master_login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/cactus/admin/register]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:46:24) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-08 20:46:36) [GET]
+  Parameters: {"id"=>"admin"}
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=admin):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-08 20:46:43) [GET]
+  Parameters: {"id"=>"cactis"}
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=cactis):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-08 20:46:48) [GET]
+  Parameters: {"id"=>"cactus"}
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=cactus):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-08 20:47:05) [GET]
+  Parameters: {"id"=>"admin"}
+
+ActiveRecord::RecordNotFound (Couldn't find Location with ID=admin):
+  app/controllers/locations_controller.rb:21:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-08 20:47:13) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 2) | 302 Found [http://localhost/cactus/admin]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:47:13) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::SessionsController#create (for 127.0.0.1 at 2010-03-08 20:47:21) [POST]
+  Parameters: {"commit"=>"login", "authenticity_token"=>"ySLCpkVi9F1xg/RXkr3flIlT9F1R8peR1Yh2D9O/vm0=", "login"=>"daffy", "password"=>"duck"}
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/session]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:47:23) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-08 20:48:05) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/cactus/admin]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:48:05) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:48:08) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 5ms (View: 5, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-08 20:48:17) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/cactus/admin]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:48:17) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-08 20:48:22) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 0ms (DB: 0) | 302 Found [http://localhost/cactus/admin]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:48:22) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:52:55) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 20:53:09) [GET]
+Redirected to http://localhost/cactus/session/new
+Filter chain halted as [:master_login_required] rendered_or_redirected.
+Completed in 1ms (DB: 0) | 302 Found [http://localhost/cactus/admin/register]
+
+
+Processing Cactus::SessionsController#new (for 127.0.0.1 at 2010-03-08 20:53:09) [GET]
+Rendering template within layouts/cactus/sessions
+Rendering cactus/sessions/new
+Completed in 2ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/session/new]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-08 20:54:56) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/index
+Completed in 26ms (View: 20, DB: 2) | 200 OK [http://localhost/cactus/admin]
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 20:55:07) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/register
+Completed in 13ms (View: 13, DB: 0) | 200 OK [http://localhost/cactus/admin/register]
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 20:55:32) [POST]
+  Parameters: {"commit"=>"Register me", "authenticity_token"=>"ySLCpkVi9F1xg/RXkr3flIlT9F1R8peR1Yh2D9O/vm0=", "user"=>{"name"=>"cheri", "password_confirmation"=>"duck", "password"=>"duck", "login"=>"daffy"}}
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/register
+Completed in 15ms (View: 5, DB: 3) | 200 OK [http://localhost/cactus/admin/register]
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 20:55:41) [POST]
+  Parameters: {"commit"=>"Register me", "authenticity_token"=>"ySLCpkVi9F1xg/RXkr3flIlT9F1R8peR1Yh2D9O/vm0=", "user"=>{"name"=>"cheri", "password_confirmation"=>"duck", "password"=>"duck", "login"=>"daffy"}}
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/register
+Completed in 24ms (View: 15, DB: 5) | 200 OK [http://localhost/cactus/admin/register]
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-08 20:58:04) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/index
+Completed in 16ms (View: 13, DB: 1) | 200 OK [http://localhost/cactus/admin]
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 20:58:54) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/register
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://localhost/cactus/admin/register]
+
+
+Processing SubcategoriesController#index (for 127.0.0.1 at 2010-03-08 21:06:11) [GET]
+  Parameters: {"category_id"=>"admin", "location_id"=>"cactus", "subcategory_id"=>"rollcall"}
+
+ActiveRecord::RecordNotFound (Couldn't find Category with ID=admin):
+  app/controllers/subcategories_controller.rb:19:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubcategoriesController#index (for 127.0.0.1 at 2010-03-08 21:07:11) [GET]
+  Parameters: {"category_id"=>"admin", "location_id"=>"cactus", "subcategory_id"=>"rollcall"}
+
+ActiveRecord::RecordNotFound (Couldn't find Category with ID=admin):
+  app/controllers/subcategories_controller.rb:19:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubcategoriesController#index (for 127.0.0.1 at 2010-03-08 21:07:12) [GET]
+  Parameters: {"category_id"=>"admin", "location_id"=>"cactus", "subcategory_id"=>"rollcall"}
+
+ActiveRecord::RecordNotFound (Couldn't find Category with ID=admin):
+  app/controllers/subcategories_controller.rb:19:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubcategoriesController#index (for 127.0.0.1 at 2010-03-08 21:07:13) [GET]
+  Parameters: {"category_id"=>"admin", "location_id"=>"cactus", "subcategory_id"=>"rollcall"}
+
+ActiveRecord::RecordNotFound (Couldn't find Category with ID=admin):
+  app/controllers/subcategories_controller.rb:19:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubcategoriesController#index (for 127.0.0.1 at 2010-03-08 21:07:13) [GET]
+  Parameters: {"category_id"=>"admin", "location_id"=>"cactus", "subcategory_id"=>"rollcall"}
+
+ActiveRecord::RecordNotFound (Couldn't find Category with ID=admin):
+  app/controllers/subcategories_controller.rb:19:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing SubcategoriesController#index (for 127.0.0.1 at 2010-03-08 21:07:14) [GET]
+  Parameters: {"category_id"=>"admin", "location_id"=>"cactus", "subcategory_id"=>"rollcall"}
+
+ActiveRecord::RecordNotFound (Couldn't find Category with ID=admin):
+  app/controllers/subcategories_controller.rb:19:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-08 21:07:34) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/index
+Completed in 14ms (View: 11, DB: 3) | 200 OK [http://localhost/cactus/admin/]
+
+
+Processing SubcategoriesController#index (for 127.0.0.1 at 2010-03-08 21:07:39) [GET]
+  Parameters: {"category_id"=>"admin", "location_id"=>"cactus", "subcategory_id"=>"rollcall"}
+
+ActiveRecord::RecordNotFound (Couldn't find Category with ID=admin):
+  app/controllers/subcategories_controller.rb:19:in `index'
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:08:01) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:10:13) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:10:14) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:10:15) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:10:15) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:10:16) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:10:16) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:10:19) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:10:33) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:10:34) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:10:58) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+
+ActionView::TemplateError (undefined local variable or method `administrator' for #<ActionView::Base:0x9de55b8>) on line #12 of app/views/cactus/admin/rollcall.html.erb:
+9: </td></tr>
+10: 
+11: <% for admistrator in @administrators do  %>
+12: <tr><td width=30>  <% administrator.name %> </td>
+13: <tr><td> <i> <% administrator.login %> </i>
+14:   <br /><br /></td></tr>
+15: 
+
+    app/views/cactus/admin/rollcall.html.erb:12
+    app/views/cactus/admin/rollcall.html.erb:11:in `each'
+    app/views/cactus/admin/rollcall.html.erb:11
+    app/controllers/cactus/admin_controller.rb:29:in `rollcall'
+    passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:13:01) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+
+ActionView::TemplateError (undefined local variable or method `administrator' for #<ActionView::Base:0x9f19a10>) on line #12 of app/views/cactus/admin/rollcall.html.erb:
+9: </td></tr>
+10: 
+11: <% for admistrator in @administrators do  %>
+12: <tr><td width=30>  <% administrator.name %> </td>
+13: <tr><td> <i> <% administrator.login %> </i>
+14:   <br /><br /></td></tr>
+15: 
+
+    app/views/cactus/admin/rollcall.html.erb:12
+    app/views/cactus/admin/rollcall.html.erb:11:in `each'
+    app/views/cactus/admin/rollcall.html.erb:11
+    app/controllers/cactus/admin_controller.rb:29:in `rollcall'
+    passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:13:02) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+
+ActionView::TemplateError (undefined local variable or method `administrator' for #<ActionView::Base:0x9cd194c>) on line #12 of app/views/cactus/admin/rollcall.html.erb:
+9: </td></tr>
+10: 
+11: <% for admistrator in @administrators do  %>
+12: <tr><td width=30>  <% administrator.name %> </td>
+13: <tr><td> <i> <% administrator.login %> </i>
+14:   <br /><br /></td></tr>
+15: 
+
+    app/views/cactus/admin/rollcall.html.erb:12
+    app/views/cactus/admin/rollcall.html.erb:11:in `each'
+    app/views/cactus/admin/rollcall.html.erb:11
+    app/controllers/cactus/admin_controller.rb:29:in `rollcall'
+    passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:13:04) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+
+ActionView::TemplateError (undefined local variable or method `administrator' for #<ActionView::Base:0x9dea680>) on line #12 of app/views/cactus/admin/rollcall.html.erb:
+9: </td></tr>
+10: 
+11: <% for admistrator in @administrators do  %>
+12: <tr><td width=30>  <% administrator.name %> </td>
+13: <tr><td> <i> <% administrator.login %> </i>
+14:   <br /><br /></td></tr>
+15: 
+
+    app/views/cactus/admin/rollcall.html.erb:12
+    app/views/cactus/admin/rollcall.html.erb:11:in `each'
+    app/views/cactus/admin/rollcall.html.erb:11
+    app/controllers/cactus/admin_controller.rb:29:in `rollcall'
+    passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:13:04) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+
+ActionView::TemplateError (undefined local variable or method `administrator' for #<ActionView::Base:0x9c8bcf8>) on line #12 of app/views/cactus/admin/rollcall.html.erb:
+9: </td></tr>
+10: 
+11: <% for admistrator in @administrators do  %>
+12: <tr><td width=30>  <% administrator.name %> </td>
+13: <tr><td> <i> <% administrator.login %> </i>
+14:   <br /><br /></td></tr>
+15: 
+
+    app/views/cactus/admin/rollcall.html.erb:12
+    app/views/cactus/admin/rollcall.html.erb:11:in `each'
+    app/views/cactus/admin/rollcall.html.erb:11
+    app/controllers/cactus/admin_controller.rb:29:in `rollcall'
+    passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:13:05) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+
+ActionView::TemplateError (undefined local variable or method `administrator' for #<ActionView::Base:0x9d7b53c>) on line #12 of app/views/cactus/admin/rollcall.html.erb:
+9: </td></tr>
+10: 
+11: <% for admistrator in @administrators do  %>
+12: <tr><td width=30>  <% administrator.name %> </td>
+13: <tr><td> <i> <% administrator.login %> </i>
+14:   <br /><br /></td></tr>
+15: 
+
+    app/views/cactus/admin/rollcall.html.erb:12
+    app/views/cactus/admin/rollcall.html.erb:11:in `each'
+    app/views/cactus/admin/rollcall.html.erb:11
+    app/controllers/cactus/admin_controller.rb:29:in `rollcall'
+    passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (internal_server_error)
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:13:05) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+
+ActionView::TemplateError (undefined local variable or method `administrator' for #<ActionView::Base:0xa024950>) on line #12 of app/views/cactus/admin/rollcall.html.erb:
+9: </td></tr>
+10: 
+11: <% for admistrator in @administrators do  %>
+12: <tr><td width=30>  <% administrator.name %> </td>
+13: <tr><td> <i> <% administrator.login %> </i>
+14:   <br /><br /></td></tr>
+15: 
+
+    app/views/cactus/admin/rollcall.html.erb:12
+    app/views/cactus/admin/rollcall.html.erb:11:in `each'
+    app/views/cactus/admin/rollcall.html.erb:11
+    app/controllers/cactus/admin_controller.rb:29:in `rollcall'
+    passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+    passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+    passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+    passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (internal_server_error)
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:13:38) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 14ms (View: 9, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:13:41) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:14:01) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:14:02) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:14:04) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:14:25) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:15:43) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:15:44) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:16:04) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 15ms (View: 11, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:17:31) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:17:32) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:17:51) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 16ms (View: 11, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:18:23) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:18:41) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:20:07) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:20:14) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:20:15) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:20:17) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:20:19) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:20:21) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:20:24) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:20:36) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:22:41) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 14ms (View: 9, DB: 2) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:22:43) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:22:54) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:22:55) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:23:14) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:23:14) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 3ms (View: 2, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:25:46) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 15ms (View: 9, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:26:39) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:26:40) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:26:57) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 18ms (View: 13, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:27:56) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:27:57) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:28:14) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 16ms (View: 12, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:28:14) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 39ms (View: 34, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:28:54) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 13ms (View: 9, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:31:24) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:31:25) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:31:26) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:31:38) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:31:40) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 4ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:31:41) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 5ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:34:22) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 15ms (View: 10, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:35:29) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 14ms (View: 10, DB: 1) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 21:35:47) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/register
+Completed in 14ms (View: 13, DB: 0) | 200 OK [http://localhost/cactus/admin/register]
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 21:36:44) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/register
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://localhost/cactus/admin/register]
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 21:36:58) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/register
+Completed in 3ms (View: 3, DB: 0) | 200 OK [http://localhost/cactus/admin/register]
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 21:36:59) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/register
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://localhost/cactus/admin/register]
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 21:37:02) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/register
+Completed in 14ms (View: 11, DB: 0) | 200 OK [http://localhost/cactus/admin/register]
+
+
+Processing Cactus::AdminController#rollcall (for 127.0.0.1 at 2010-03-08 21:37:04) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/rollcall
+Completed in 2ms (View: 1, DB: 0) | 200 OK [http://localhost/cactus/admin/rollcall]
+
+
+Processing Cactus::AdminController#register (for 127.0.0.1 at 2010-03-08 21:37:06) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/register
+Completed in 7ms (View: 7, DB: 0) | 200 OK [http://localhost/cactus/admin/register]
+
+
+Processing Cactus::AdminController#index (for 127.0.0.1 at 2010-03-08 21:37:08) [GET]
+Rendering template within layouts/cactus/admin
+Rendering cactus/admin/index
+Completed in 28ms (View: 22, DB: 2) | 200 OK [http://localhost/cactus/admin]
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-09 08:03:53) [GET]
+Rendering template within layouts/locations
+Rendering locations/index
+Completed in 46ms (View: 28, DB: 4) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-09 08:03:53) [GET]
+
+ActionController::RoutingError (No route matches "/images/ccactus.gif" with {:method=>:get}):
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)
+** ultrasphinx: configuration file not found for "production" environment
+** ultrasphinx: please run 'rake ultrasphinx:configure'
+** ultrasphinx: spelling support not available (raspell configuration raised "uninitialized constant Ultrasphinx::Spell::Aspell")
+
+
+Processing LocationsController#index (for 127.0.0.1 at 2010-03-09 20:38:19) [GET]
+Rendering template within layouts/locations
+Rendering locations/index
+Completed in 58ms (View: 37, DB: 2) | 200 OK [http://localhost/]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-03-09 20:38:19) [GET]
+
+ActionController::RoutingError (No route matches "/images/ccactus.gif" with {:method=>:get}):
+  passenger (2.2.9) lib/phusion_passenger/rack/request_handler.rb:92:in `process_request'
+  passenger (2.2.9) lib/phusion_passenger/abstract_request_handler.rb:207:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:400:in `start_request_handler'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:351:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/utils.rb:184:in `safe_fork'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:349:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:163:in `start'
+  passenger (2.2.9) lib/phusion_passenger/railz/application_spawner.rb:209:in `start'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:262:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:126:in `lookup_or_add'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:256:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:80:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server_collection.rb:79:in `synchronize'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:255:in `spawn_rails_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:154:in `spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/spawn_manager.rb:287:in `handle_spawn_application'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `__send__'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:352:in `main_loop'
+  passenger (2.2.9) lib/phusion_passenger/abstract_server.rb:196:in `start_synchronously'
+
+Rendering rescues/layout (not_found)

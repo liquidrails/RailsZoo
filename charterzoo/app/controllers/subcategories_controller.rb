@@ -79,7 +79,7 @@ class SubcategoriesController < ApplicationController
 
 #---------------------------------------------------------
 
-
+  # From http://lmcity.sk/~leguaan/simplelog/lib/search.rb
   # A chunk is a string of non-whitespace,
     # except that anything inside double quotes
     # is a chunk, including whitespace

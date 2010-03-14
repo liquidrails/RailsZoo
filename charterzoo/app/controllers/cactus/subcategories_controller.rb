@@ -108,13 +108,13 @@ def add
 
 def destroy
 #find all subcategories where subname id is = to given subname id
-    @subcategories = Subcategory.find_all(:conditions => :subname_id = subname_id)
+    @subcategories = Subcategory.find_all(:conditions => [":subname_id =?", subname_id])
 #Go through each subcategory and see if it is removable
     for subcategory in @subcategories
        subcategory.destroy
     end
 #then see whether the subname has any associated subcategories.  if it doesn't, destroy it.
-    @subcategories = Subcategory.find_all(:conditions => :subname_id = subname_id)
+    @subcategories = Subcategory.find_all(:conditions =>  [":subname_id =?", subname_id])
      if @subcategories.length>1
         @subname.destroy
      end

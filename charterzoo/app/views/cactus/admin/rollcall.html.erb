@@ -1,0 +1,24 @@
+
+<table width = "<%= TABLE_WIDTH %>" align="center" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+  <tr><td colspan="2"> 
+<%= '<b>'+flash[:info]+'</b><hr />' if flash[:info] %>
+<h2>Cactus Farmers!</h2>
+
+<%= error_messages_for 'user' %>
+</td></tr>
+
+<tr><td><b><u>Name</u></b></td>  <td><b><u>Login</u></b><br><br></td></tr>
+
+<% for apple in @administrators do  %>
+  <tr><td>  <%= apple.name %> </td>
+  <td> <i> <%= apple.login %></i></td></tr>
+<% end %>
+
+<tr><td>
+<br><br>
+<%= link_to "Register", cactus_register_path %>
+</td></tr>
+
+</table>
+
+
